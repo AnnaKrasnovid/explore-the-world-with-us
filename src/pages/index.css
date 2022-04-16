@@ -1,0 +1,361 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/fonts.css";
+@import "../vendor/fonts/fonts.css";
+.root {
+  max-width: 1920px;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: auto;
+}
+
+.page {
+  margin: auto;
+}
+
+.header {
+  margin-bottom: -100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 7.8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__icon {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header__title {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #2A3950;
+  margin: 0;
+}
+.header__subtitle {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #2A3950;
+}
+
+/*.cover__background {
+    background: url(../../../image/cover-trains.jpg);
+    max-width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    list-style: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .cover__background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a2c2f;
+    opacity: 0.3;
+    transition: opasity 2s linear;
+  }*/
+/*&::after {
+    content: '';
+    top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(255, 255, 255, 0.5);
+}*/
+.logo {
+  width: 202px;
+  height: 72px;
+}
+
+.button {
+  padding: 0;
+}
+.button_type_header {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #FFFFFF;
+  background-color: #2A3950;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  width: 158px;
+  height: 50px;
+}
+.button_type_lead {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FFFFFF;
+  background-color: #2A3950;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  width: 230px;
+  height: 64px;
+  margin-bottom: 160px;
+}
+.button_type_form {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  height: 68px;
+}
+.button_type_intro {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 215px;
+  height: 68px;
+}
+
+.lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../image/0.png);
+  padding: 262px 7.8% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+.lead__container {
+  max-width: 690px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.lead__title {
+  font-family: "DM Serif Display";
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0;
+  color: #006270;
+  text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2);
+}
+.lead__subtitle {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #006270;
+  margin-bottom: 60px;
+}
+
+.tab__button {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  width: 270px;
+  height: 85px;
+  background: #F3F6F6;
+  border-radius: 10px;
+  padding: 0;
+  border: 0;
+}
+.tab__container {
+  padding: 40px 30px 25px;
+  background-color: #F3F6F6;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 0;
+  margin: 0;
+  padding: 0 0 15px;
+}
+.form__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 35px;
+}
+.form__label {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #006270;
+}
+.form__input {
+  min-width: 290px;
+  height: 68px;
+  border: 1px solid #2A3950;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin-top: 5px;
+}
+.form__input::-webkit-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::-moz-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input:-ms-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::-ms-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__label-checkbox {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #006270;
+  margin: 0 10px 0;
+}
+
+/*.popup__input::placeholder {
+    color: #000000;
+  }*/
+.intro {
+  background-color: #2a3950;
+  background-image: url(../image/BG-intro.png);
+  padding: 127px 9.79% 120px;
+  display: -ms-grid;
+  display: grid;
+}
+.intro__info {
+  font-family: "Denk One";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.title {
+  font-family: "DM Serif Display";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}

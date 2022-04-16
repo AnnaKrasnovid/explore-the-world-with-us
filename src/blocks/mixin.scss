@@ -1,0 +1,92 @@
+//$base-width: 1920px;
+//padding: 0 calc(100% - 92.2%)
+//max-width: calc(100% - #{$side-padding});
+
+$base-side-padding: 7.8%;
+
+//@mixin padding-section ($top, $width-block, $bottom, $left){
+ //   padding: $top calc((100% - #{$width-block}) / 2) $bottom calc(100% - #{$right});
+//}
+
+@mixin font-segoe-regular($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 400;
+    }
+    line-height: $line-height;
+}
+
+@mixin font-segoe-semibold($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 600;
+    }
+    line-height: $line-height;
+}
+
+@mixin font-segoe-bold($size, $line-height){
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+}
+
+@mixin font-title{
+    font: {
+        family: 'DM Serif Display';
+        size: 62px;
+        weight: 400;
+    }
+    line-height: 112%;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+@mixin font-subtitle{
+    font: {
+        family: 'Segoe UI';
+        size: 20px;
+        weight: 400;
+    }
+    line-height: 27px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+@mixin button-green($size, $line-height) {
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+    color: #2A3950;;
+    background-color: #00E0C7;
+    border-radius: 10px;
+    border: none;
+}
+ 
+@mixin button-dark($size, $line-height, $border-radius) {
+    font: {
+        family: 'Segoe UI';
+        size: $size;
+        weight: 700;
+    }
+    line-height: $line-height;
+    color: #FFFFFF;
+    background-color: #2A3950;
+    border-radius: $border-radius;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}

@@ -1,0 +1,30 @@
+@import "./mixin.scss";
+
+.button {
+    &_type_header {
+        @include button-dark (20px, 27px, 8px);
+        width: 158px;
+        height: 50px;
+    }
+
+    &_type_lead {
+        @include button-dark (22px, 28px, 10px);
+        width: 230px;
+        height: 64px;
+        margin-bottom: 160px;
+    }
+
+    &_type_form {
+        @include button-green(22px, 125%);
+        width: 220px;
+        height: 68px;
+    }
+    &_type_intro {
+        @include button-green(22px, 125%);
+        width: 215px;
+        height: 68px;
+    }
+
+    padding: 0;
+}
+

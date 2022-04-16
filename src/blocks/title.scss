@@ -1,0 +1,6 @@
+@import "./mixin.scss";
+
+.title {
+    @include font-title;
+    margin: 0;
+}

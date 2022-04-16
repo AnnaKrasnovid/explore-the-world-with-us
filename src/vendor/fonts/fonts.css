@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url(./SegoeUI.woff) format("woff"),
+         url(./SegoeUI.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(./SegoeBold.woff) format("woff"),
+         url(./SegoeBold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(./SegoeUI-SemiBold.woff) format("woff"),
+         url(./SegoeUI-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "DM Serif Display";
+    src: url(./DMSerifDisplay-Regular.woff) format("woff"),
+         url(./DMSerifDisplay-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Denk One";
+    src: url(./DenkOne-Regular.woff) format("woff"),
+         url(./DenkOne-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Denk One";
+    src: url() format("woff"),
+         url() format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./Roboto-Regular.woff) format("woff"),
+         url(./Roboto-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./Roboto-Medium.woff) format("woff"),
+         url(./Roboto-Medium.woff2) format("woff2");
+    font-weight: 500;
+}

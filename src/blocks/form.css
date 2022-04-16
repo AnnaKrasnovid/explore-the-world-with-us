@@ -1,0 +1,93 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 0;
+  margin: 0;
+  padding: 0 0 15px;
+}
+.form__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 35px;
+}
+.form__label {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #006270;
+}
+.form__input {
+  min-width: 290px;
+  height: 68px;
+  border: 1px solid #2A3950;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin-top: 5px;
+}
+.form__input::-webkit-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::-moz-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input:-ms-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::-ms-input-placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__input::placeholder {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.form__label-checkbox {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #006270;
+  margin: 0 10px 0;
+}
+
+/*.popup__input::placeholder {
+    color: #000000;
+  }*/

@@ -1,0 +1,18 @@
+.intro {
+  background-color: #2a3950;
+  background-image: url(../image/BG-intro.png);
+  padding: 127px 9.79% 120px;
+  display: -ms-grid;
+  display: grid;
+}
+.intro__info {
+  font-family: "Denk One";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin: 0;
+}

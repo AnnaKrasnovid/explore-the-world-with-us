@@ -1,0 +1,20 @@
+@import "./mixin.scss";
+
+.tab {
+    &__one {
+
+    }
+    &__button {
+        @include font-segoe-semibold(30px, 40px);
+        width: 270px;
+        height: 85px;
+        background: #F3F6F6;        
+        border-radius: 10px;
+        padding: 0;
+        border: 0;
+    }
+    &__container {
+        padding: 40px 30px 25px;
+        background-color: #F3F6F6;
+    }
+}
