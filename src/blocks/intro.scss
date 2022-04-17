@@ -1,12 +1,83 @@
 @import "./mixin.scss";
 
 .intro {
-    &__animation {
-        
+    &__container-picture {
+       max-width: 751px; 
+       height: 440px; 
+       background-image: url(../image/Group-back.png);
+        //background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;      
     }
 
-    &__container {
+    &__picture {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
 
+    &__picture-background-1 {
+        background-image: url(../image/Vector-back1.png);
+        max-height: 28px;        
+        bottom: 0;
+        right: 0;
+    }
+
+    &__picture-background-2 {
+        background-image: url(../image/Vector-back2.png);
+        max-height: 8px;
+        bottom: 36px;
+        right: 0;
+    }
+
+    &__picture-car {
+        background-image: url(../image/Group-car.png);
+        top: 180px;
+        left: 143px;
+    }
+
+    &__picture-tent {
+        background-image: url(../image/Group-tent.png);
+        top: 228px;
+        left: 395px;
+    }
+
+    &__picture-suitcase {
+        background-image: url(../image/Group-suitcase.png);
+        top: 300px;
+        left: 296px;
+    }
+
+    &__picture-drying {
+        background-image: url(../image/Group-drying.png);
+        top: 245px;
+        left: 60px;
+    }
+
+    &__picture-board {
+        background-image: url(../image/Group-board.png);
+        top: 215px;
+        left: 238px;
+    }
+
+    &__picture-ball {
+        background-image: url(../image/Group-ball.png);
+        top: 340px;
+        left: 430px;
+    }
+
+    &__picture-like {
+        background-image: url(../image/Group-like.png);
+        top: 180px;
+        left: 470px;
+    }
+
+
+    &__container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &__info {
@@ -14,14 +85,17 @@
         font-weight: 400;
         font-size: 50px;
         line-height: 62px;
-        text-align: center;
         text-transform: capitalize;
         color: #FFFFFF;
         opacity: 0.7;
         margin: 0;
     }
+
     background-color: #2a3950;
     background-image: url(../image/BG-intro.png);
     padding: 127px 9.79% 120px;
     display: grid;
+    grid-template-columns: /*minmax(280px, 751px)*/751px minmax(280px, 692px);
+    column-gap: 80px;
+    
 }

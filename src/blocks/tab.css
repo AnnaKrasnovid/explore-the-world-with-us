@@ -1,3 +1,7 @@
+.tab {
+  position: relative;
+  z-index: 42;
+}
 .tab__button {
   font-family: "Segoe UI";
   font-size: 30px;
