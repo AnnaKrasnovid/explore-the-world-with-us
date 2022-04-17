@@ -54,3 +54,29 @@
   width: 215px;
   height: 68px;
 }
+.button_type_card-booking {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+  width: 89px;
+  height: 30px;
+  border: 1px solid #006270;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.button_type_card-booking-green {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 89px;
+  height: 30px;
+}

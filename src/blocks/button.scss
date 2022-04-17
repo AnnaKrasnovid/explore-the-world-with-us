@@ -19,12 +19,31 @@
         width: 220px;
         height: 68px;
     }
+
     &_type_intro {
         @include button-green(22px, 125%);
         width: 215px;
         height: 68px;
     }
 
+    &_type_card-booking {
+        @include font-segoe-regular(12px, 125%);
+        width: 89px;
+        height: 30px;
+        border: 1px solid #006270;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+
+    &_type_card-booking-green {
+        @include button-green(12px, 125%);
+        width: 89px;
+        height: 30px;
+    }
+    &_type_card-destinations {
+        
+    }
+
     padding: 0;
 }
-

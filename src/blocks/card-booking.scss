@@ -1,0 +1,56 @@
+@import "./mixin.scss";
+
+.card-booking {
+    &__picture {
+        width: 310px;
+        height: 180px;
+        box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 2px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include font-segoe-semibold(24px, 125%);
+        color: #2A3950;
+        margin-top: 10px;
+    }
+
+    &__subtitle {
+        @include font-segoe-regular(18px, 125%);
+        color: #006270;
+        margin: 5px 0 10px 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_rotate_left {
+        transform: rotate(-15deg);
+        margin-top: 50px;
+    }
+
+    &_rotate_right {
+        transform: rotate(15deg);
+    }
+    &_rotate_center {
+        margin-top: 326px;
+    }
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 350px;
+    height: 358px;
+    min-height: 328px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}

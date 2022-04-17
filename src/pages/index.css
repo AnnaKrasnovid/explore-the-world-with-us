@@ -63,6 +63,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+  margin: 0;
   color: #2A3950;
   margin: 0;
 }
@@ -71,6 +72,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
   color: #2A3950;
 }
 
@@ -134,6 +136,32 @@
   border: none;
   width: 215px;
   height: 68px;
+}
+.button_type_card-booking {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+  width: 89px;
+  height: 30px;
+  border: 1px solid #006270;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.button_type_card-booking-green {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 89px;
+  height: 30px;
 }
 
 .lead {
@@ -296,6 +324,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
+  margin: 0;
   color: #006270;
   margin-bottom: 60px;
 }
@@ -309,6 +338,7 @@
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
+  margin: 0;
   width: 270px;
   height: 85px;
   background: #F3F6F6;
@@ -350,6 +380,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
+  margin: 0;
   color: #006270;
 }
 .form__input {
@@ -369,6 +400,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
+  margin: 0;
 }
 .form__input::-moz-placeholder {
   color: #2A3950;
@@ -377,6 +409,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
+  margin: 0;
 }
 .form__input:-ms-input-placeholder {
   color: #2A3950;
@@ -385,6 +418,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
+  margin: 0;
 }
 .form__input::-ms-input-placeholder {
   color: #2A3950;
@@ -393,6 +427,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
+  margin: 0;
 }
 .form__input::placeholder {
   color: #2A3950;
@@ -401,12 +436,14 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
+  margin: 0;
 }
 .form__label-checkbox {
   font-family: "Segoe UI";
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
+  margin: 0;
   color: #006270;
   margin: 0 10px 0;
 }
@@ -526,4 +563,133 @@
   color: #FFFFFF;
   opacity: 0.7;
   margin: 0;
+}
+
+.booking {
+  background-color: #264257;
+  padding: 100px 7.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-image: url(../image/map.png);
+  background-repeat: no-repeat;
+  background-position: center 80%;
+}
+.booking__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(-webkit-min-content, -webkit-max-content) 200px minmax(-webkit-min-content, -webkit-max-content) 200px minmax(-webkit-min-content, -webkit-max-content);
+  -ms-grid-columns: minmax(min-content, max-content) 200px minmax(min-content, max-content) 200px minmax(min-content, max-content);
+  grid-template-columns: repeat(3, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px;
+}
+.booking__container-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 750px;
+}
+
+.card-booking {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 350px;
+  height: 358px;
+  min-height: 328px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card-booking__picture {
+  width: 310px;
+  height: 180px;
+  -webkit-box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  margin: 0 auto;
+}
+.card-booking__title {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
+  color: #2A3950;
+  margin-top: 10px;
+}
+.card-booking__subtitle {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+  color: #006270;
+  margin: 5px 0 10px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card-booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card-booking_rotate_left {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  margin-top: 50px;
+}
+.card-booking_rotate_right {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.card-booking_rotate_center {
+  margin-top: 326px;
+}
+
+.container-info {
+  max-width: 856px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
