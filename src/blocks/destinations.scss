@@ -1,3 +1,14 @@
+@import "./mixin.scss";
+
 .destinations {
-    
+    &__container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 950px));
+        column-gap: 100px;
+    }
+    background-color: #2a3950;
+    padding: 100px 0 100px $base-side-padding;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }

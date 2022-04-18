@@ -1,6 +1,5 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts/fonts.css";
-@import "../vendor/fonts/fonts.css";
 .root {
   max-width: 1920px;
   width: 100%;
@@ -162,6 +161,18 @@
   border: none;
   width: 89px;
   height: 30px;
+}
+.button_type_card-destinations {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  height: 60px;
 }
 
 .lead {
@@ -692,4 +703,74 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+.destinations {
+  background-color: #2a3950;
+  padding: 100px 0 100px 7.8%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.destinations__container-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 950px) 100px minmax(300px, 950px);
+  grid-template-columns: repeat(2, minmax(300px, 950px));
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.card-destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+          box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
+  border-radius: 50px;
+  padding: 30px 30px 30px 50px;
+}
+.card-destinations__container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card-destinations__title {
+  font-family: "Segoe UI";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  color: #222222;
+}
+.card-destinations__text {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 167%;
+  margin: 0;
+  color: #636668;
+}
+.card-destinations__author {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
+  color: #636668;
+}
+.card-destinations__picture {
+  border-radius: 40px;
+  margin-left: 50px;
 }

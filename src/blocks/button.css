@@ -80,3 +80,15 @@
   width: 89px;
   height: 30px;
 }
+.button_type_card-destinations {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  height: 60px;
+}

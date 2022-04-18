@@ -42,7 +42,9 @@
         height: 30px;
     }
     &_type_card-destinations {
-        
+        @include button-green(22px, 29px);
+        width: 220px;
+        height: 60px;
     }
 
     padding: 0;
