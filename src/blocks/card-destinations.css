@@ -1,8 +1,8 @@
 .card-destinations {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 484px) 50px minmax(200px, 376px);
-  grid-template-columns: minmax(300px, 484px) minmax(200px, 376px);
+  -ms-grid-columns: 484px 50px 340px;
+  grid-template-columns: 484px 340px;
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
           column-gap: 50px;
@@ -13,12 +13,29 @@
   padding: 30px 30px 30px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-right: 5%;
+      grid-template-areas: "title image" "text image" "info image" "buttons image";
 }
-.card-destinations__container-text {
+.card-destinations__container-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 484px);
-  grid-template-columns: minmax(300px, 484px);
+  -ms-grid-columns: 40px 21px 1fr;
+  grid-template-columns: 40px 1fr;
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+}
+.card-destinations__icon {
+  background-image: url(../image/icon-t.svg);
+  background-size: 27px 39px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 39px;
+  width: 39px;
+  margin-top: 15px;
 }
 .card-destinations__title {
   font-family: "Segoe UI";
@@ -29,20 +46,26 @@
   color: #222222;
 }
 .card-destinations__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   font-family: "Segoe UI";
   font-size: 18px;
   font-weight: 600;
   line-height: 167%;
   margin: 0;
   color: #636668;
+  grid-area: text;
 }
 .card-destinations__info {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-area: info;
 }
 .card-destinations__author {
   font-family: "Segoe UI";
@@ -52,6 +75,16 @@
   margin: 0;
   color: #636668;
 }
+.card-destinations__comment {
+  background-image: url(../image/icon-comment.svg);
+  padding: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  background-color: white;
+}
 .card-destinations__count-comment {
   font-family: "Segoe UI";
   font-size: 24px;
@@ -59,6 +92,9 @@
   line-height: 30px;
   margin: 0;
   color: #222222;
+}
+.card-destinations__like {
+  background-image: url();
 }
 .card-destinations__count-like {
   font-family: "Segoe UI";
@@ -69,18 +105,66 @@
   color: #222222;
 }
 .card-destinations__buttons {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-area: buttons;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .card-destinations__picture {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
   border-radius: 40px;
-  max-width: 376px;
   width: 100%;
-  height: 580px;
+  height: 540px;
   -o-object-fit: cover;
      object-fit: cover;
+  grid-area: image;
 }
+@media screen and (max-width: 1150px) {
+  .card-destinations__picture {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .card-destinations {
+    -ms-grid-columns: minmax(280px, -webkit-max-content);
+    -ms-grid-columns: minmax(280px, max-content);
+    grid-template-columns: minmax(280px, -webkit-max-content);
+    grid-template-columns: minmax(280px, max-content);
+        grid-template-areas: "title" "image" "text" "info" "buttons";
+    padding-left: 30px;
+  }
+  .card-destinations__container-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .card-destinations__text {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .card-destinations__info {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .card-destinations__buttons {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .card-destinations__picture {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+}
+/*
+}*/
+/* <div class="card-destinations__container-text">*/

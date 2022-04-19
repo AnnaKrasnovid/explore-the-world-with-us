@@ -5,11 +5,15 @@
   overflow: hidden;
 }
 .destinations__container-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 950px 100px 950px 100px 950px 100px 950px 100px 950px;
-  grid-template-columns: repeat(5, 950px);
-  -webkit-column-gap: 100px;
-     -moz-column-gap: 100px;
-          column-gap: 100px;
+  /*display: grid;
+  grid-template-columns: repeat(5, max-content);        
+  column-gap: 100px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 400px) {
+  .destinations {
+    padding-right: 7.8%;
+  }
 }

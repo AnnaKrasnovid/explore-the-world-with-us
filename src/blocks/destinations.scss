@@ -2,10 +2,11 @@
 
 .destinations {
     &__container-cards {
-        display: grid;
-        grid-template-columns: repeat(5, 950px);
-        
-        column-gap: 100px;
+        /*display: grid;
+        grid-template-columns: repeat(5, max-content);        
+        column-gap: 100px;*/
+        display: flex;
+
     }
     background-color: #2a3950;
     padding: 100px 0 100px $base-side-padding;
@@ -13,4 +14,8 @@
     //display: flex;
     //flex-direction: column;
     overflow: hidden;
+    @media screen and (max-width: 400px) {
+        padding-right: $base-side-padding;
+
+    }
 }
