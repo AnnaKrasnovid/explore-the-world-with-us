@@ -40,7 +40,8 @@
         transform: rotate(15deg);
     }
     &_rotate_center {
-        margin-top: 326px;
+        //margin-top: 326px;
+        align-self: flex-end;
     }
 
     background-color: #FFFFFF;

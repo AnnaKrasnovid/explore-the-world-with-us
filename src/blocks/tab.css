@@ -1,0 +1,21 @@
+.tab {
+  position: relative;
+  z-index: 42;
+}
+.tab__button {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 0;
+  width: 270px;
+  height: 85px;
+  background: #F3F6F6;
+  border-radius: 10px;
+  padding: 0;
+  border: 0;
+}
+.tab__container {
+  padding: 40px 30px 25px;
+  background-color: #F3F6F6;
+}

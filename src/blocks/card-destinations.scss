@@ -2,61 +2,74 @@
 
 .card-destinations {
     &__container-text {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: minmax(300px, 484px)
     }
-    &__container-title {
 
-    }
-    &__icon {
+    &__container-title {}
 
-    }
+    &__icon {}
+
     &__title {
-       @include font-segoe-semibold(40px, 150%);
-       color: #222222;
+        @include font-segoe-semibold(40px, 150%);
+        color: #222222;
     }
+
     &__text {
         @include font-segoe-semibold(18px, 167%);
         color: #636668;
     }
-    &__info {
 
+    &__info {
+        display: flex;
+        justify-content: space-between
     }
+
     &__author {
         @include font-segoe-semibold(24px, 125%);
         color: #636668;
     }
-    &__container-comment {
 
-    }
-    &__comment {
+    &__container-comment {}
 
-    }
+    &__comment {}
+
     &__count-comment {
-
+        @include font-segoe-semibold(24px, 30px);
+        color: #222222;
     }
-    &__container-like {
 
-    }
-    &__like {
+    &__container-like {}
 
-    }
+    &__like {}
+
     &__count-like {
-
+        @include font-segoe-semibold(24px, 30px);
+        color: #222222;
     }
+
     &__buttons {
-
+        display: flex;
+        justify-content: center;
     }
-    &__buttons-to-share{
 
-    }
     &__picture {
         border-radius: 40px;
-        margin-left: 50px;
+        max-width: 376px;
+        width: 100%;
+        height: 580px;
+        object-fit: cover;
     }
-    display: flex;
+
+    display: grid;
+    grid-template-columns: minmax(300px, 484px) minmax(200px, 376px);
+    column-gap: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
-    border-radius: 50px; 
+    border-radius: 50px;
     padding: 30px 30px 30px 50px;
+    box-sizing: border-box;
+    //max-width: 950px;
+    //width: 100%;
+    //width: 950px;
 }

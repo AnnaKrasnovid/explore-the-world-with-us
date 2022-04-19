@@ -82,6 +82,7 @@
 
 .button {
   padding: 0;
+  cursor: pointer;
 }
 .button_type_header {
   font-family: "Segoe UI";
@@ -174,6 +175,14 @@
   width: 220px;
   height: 60px;
 }
+.button_type_to-share {
+  padding: 0;
+  border: 0;
+  background: rgba(0, 224, 199, 0.2);
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+}
 
 .lead {
   display: -webkit-box;
@@ -194,6 +203,7 @@
           flex-direction: column;
   position: relative;
   z-index: 0;
+  overflow: hidden;
   /*display: flex;
   justify-content: center;
   align-items: center;*/
@@ -573,7 +583,7 @@
   line-height: 27px;
   color: #FFFFFF;
   opacity: 0.7;
-  margin: 0;
+  margin: 15px 0 50px;
 }
 
 .booking {
@@ -690,7 +700,8 @@
           transform: rotate(15deg);
 }
 .card-booking_rotate_center {
-  margin-top: 326px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .container-info {
@@ -703,48 +714,46 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin: 0 auto;
 }
 
 .destinations {
   background-color: #2a3950;
   padding: 100px 0 100px 7.8%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  overflow: hidden;
 }
 .destinations__container-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 950px) 100px minmax(300px, 950px);
-  grid-template-columns: repeat(2, minmax(300px, 950px));
+  -ms-grid-columns: 950px 100px 950px 100px 950px 100px 950px 100px 950px;
+  grid-template-columns: repeat(5, 950px);
   -webkit-column-gap: 100px;
      -moz-column-gap: 100px;
           column-gap: 100px;
 }
 
 .card-destinations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 484px) 50px minmax(200px, 376px);
+  grid-template-columns: minmax(300px, 484px) minmax(200px, 376px);
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
           box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
   border-radius: 50px;
   padding: 30px 30px 30px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .card-destinations__container-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 484px);
+  grid-template-columns: minmax(300px, 484px);
 }
 .card-destinations__title {
   font-family: "Segoe UI";
@@ -762,6 +771,14 @@
   margin: 0;
   color: #636668;
 }
+.card-destinations__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .card-destinations__author {
   font-family: "Segoe UI";
   font-size: 24px;
@@ -770,7 +787,35 @@
   margin: 0;
   color: #636668;
 }
+.card-destinations__count-comment {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  color: #222222;
+}
+.card-destinations__count-like {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  color: #222222;
+}
+.card-destinations__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .card-destinations__picture {
   border-radius: 40px;
-  margin-left: 50px;
+  max-width: 376px;
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

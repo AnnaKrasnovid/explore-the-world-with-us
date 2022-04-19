@@ -1,21 +1,24 @@
 .card-destinations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 484px) 50px minmax(200px, 376px);
+  grid-template-columns: minmax(300px, 484px) minmax(200px, 376px);
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
           box-shadow: 0px 24px 100px rgba(36, 55, 91, 0.15);
   border-radius: 50px;
   padding: 30px 30px 30px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .card-destinations__container-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 484px);
+  grid-template-columns: minmax(300px, 484px);
 }
 .card-destinations__title {
   font-family: "Segoe UI";
@@ -33,6 +36,14 @@
   margin: 0;
   color: #636668;
 }
+.card-destinations__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .card-destinations__author {
   font-family: "Segoe UI";
   font-size: 24px;
@@ -41,7 +52,35 @@
   margin: 0;
   color: #636668;
 }
+.card-destinations__count-comment {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  color: #222222;
+}
+.card-destinations__count-like {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  color: #222222;
+}
+.card-destinations__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .card-destinations__picture {
   border-radius: 40px;
-  margin-left: 50px;
+  max-width: 376px;
+  width: 100%;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

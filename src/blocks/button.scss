@@ -46,6 +46,15 @@
         width: 220px;
         height: 60px;
     }
+    &_type_to-share {
+        padding: 0;
+        border: 0;
+        background: rgba(0, 224, 199, 0.2);
+        border-radius: 50%;
+        width: 61px;
+        height: 61px;
+    }
 
     padding: 0;
+    cursor: pointer;
 }

@@ -2,19 +2,13 @@
   background-color: #2a3950;
   padding: 100px 0 100px 7.8%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  overflow: hidden;
 }
 .destinations__container-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(300px, 950px) 100px minmax(300px, 950px);
-  grid-template-columns: repeat(2, minmax(300px, 950px));
+  -ms-grid-columns: 950px 100px 950px 100px 950px 100px 950px 100px 950px;
+  grid-template-columns: repeat(5, 950px);
   -webkit-column-gap: 100px;
      -moz-column-gap: 100px;
           column-gap: 100px;
