@@ -1,5 +1,7 @@
 .destinations {
   background-color: #2a3950;
+  background-image: url(../image/bg-destination.svg);
+  background-size: 100%;
   padding: 100px 0 100px 7.8%;
   margin: auto;
   overflow: hidden;

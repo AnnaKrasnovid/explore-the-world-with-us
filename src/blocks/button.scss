@@ -24,6 +24,7 @@
         @include button-green(22px, 125%);
         width: 215px;
         height: 68px;
+        border: 2px solid #FFFFFF;
     }
 
     &_type_card-booking {
@@ -45,6 +46,8 @@
         @include button-green(22px, 29px);
         width: 220px;
         height: 60px;
+        border: 2px solid #FFFFFF;
+        box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
     }
     &_type_to-share {
         padding: 0;

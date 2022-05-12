@@ -54,6 +54,7 @@
   border: none;
   width: 215px;
   height: 68px;
+  border: 2px solid #FFFFFF;
 }
 .button_type_card-booking {
   font-family: "Segoe UI";
@@ -92,6 +93,9 @@
   border: none;
   width: 220px;
   height: 60px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
+          box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
 }
 .button_type_to-share {
   padding: 0;

@@ -6,20 +6,9 @@
         display: grid;
         grid-template-columns: 40px 1fr;
         column-gap: 21px;
-
     }
 
-    &__icon {
-        background-image: url(../image/icon-t.svg);
-        //margin: 15px 21px 0 0;
-        background-size: 27px 39px;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 39px;
-        width: 39px;
-        margin-top: 15px
-    }
-
+        
     &__title {
         @include font-segoe-semibold(40px, 150%);
         color: #222222;
@@ -40,6 +29,7 @@
     &__author {
         @include font-segoe-semibold(24px, 125%);
         color: #636668;
+        flex-basis: 210px;
     }
 
     &__container-comment {
@@ -123,7 +113,3 @@
     }
 }
 
-/*
-}*/
-
-/* <div class="card-destinations__container-text">*/

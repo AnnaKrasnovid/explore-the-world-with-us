@@ -74,6 +74,8 @@
   line-height: 125%;
   margin: 0;
   color: #636668;
+  -ms-flex-preferred-size: 210px;
+      flex-basis: 210px;
 }
 .card-destinations__comment {
   background-image: url(../image/icon-comment.svg);
