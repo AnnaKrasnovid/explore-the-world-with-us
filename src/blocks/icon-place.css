@@ -1,0 +1,11 @@
+.icon-place {
+  background-image: url(../image/icon-t.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-place_type_destinations {
+  background-size: 27px 39px;
+  height: 39px;
+  width: 39px;
+  margin-top: 15px;
+}

@@ -832,15 +832,6 @@
      -moz-column-gap: 21px;
           column-gap: 21px;
 }
-.card-destinations__icon {
-  background-image: url(../image/icon-t.svg);
-  background-size: 27px 39px;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 39px;
-  width: 39px;
-  margin-top: 15px;
-}
 .card-destinations__title {
   font-family: "Segoe UI";
   font-size: 40px;
@@ -971,19 +962,16 @@
     -ms-grid-column: 1;
   }
 }
-/*
-}*/
-/* <div class="card-destinations__container-text">*/
 .icon-place {
   background-image: url(../image/icon-t.svg);
-  height: 39px;
-  width: 39px;
-  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon-place_type_destinations {
   background-size: 27px 39px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 39px;
+  width: 39px;
+  margin-top: 15px;
 }
 
 .tour-packages {
