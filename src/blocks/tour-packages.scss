@@ -1,4 +1,18 @@
 .tour-packages {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1620px;
+        width: 100%;
+        padding: 50px 0;
+    }
+    &__nav-container {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     background-color: #264257;
     background-image: url();
+    padding: 100px 0 100px 100px;
 }

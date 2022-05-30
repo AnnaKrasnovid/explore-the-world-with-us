@@ -4,33 +4,33 @@
     &_type_header {
         @include button-dark (20px, 27px, 8px);
         width: 158px;
-        height: 50px;
+        min-height: 50px;
     }
 
     &_type_lead {
         @include button-dark (22px, 28px, 10px);
         width: 230px;
-        height: 64px;
+        min-height: 64px;
         margin-bottom: 160px;
     }
 
     &_type_form {
         @include button-green(22px, 125%);
         width: 220px;
-        height: 68px;
+        min-height: 68px;
     }
 
     &_type_intro {
         @include button-green(22px, 125%);
         width: 215px;
-        height: 68px;
+        min-height: 68px;
         border: 2px solid #FFFFFF;
     }
 
     &_type_card-booking {
         @include font-segoe-regular(12px, 125%);
         width: 89px;
-        height: 30px;
+        min-height: 30px;
         border: 1px solid #006270;
         box-sizing: border-box;
         border-radius: 5px;
@@ -40,28 +40,75 @@
     &_type_card-booking-green {
         @include button-green(12px, 125%);
         width: 89px;
-        height: 30px;
+        min-height: 30px;
     }
+
     &_type_card-destinations {
         @include button-green(22px, 29px);
         width: 220px;
-        height: 60px;
+        min-height: 60px;
         border: 2px solid #FFFFFF;
         box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
     }
+
+    &_type_tour-packages {
+        @include button-green(22px, 125%);
+        width: 250px;
+        min-height: 65px;
+    }
+
+    &_type_card-tour {
+        @include button-green(20px, 125%);
+        max-width: 170px;
+        width: 100%;
+        min-height: 50px;
+      
+    }
+
     &_type_to-share {
         padding: 0;
         border: 0;
         background: rgba(0, 224, 199, 0.2);
         border-radius: 50%;
         width: 61px;
-        height: 61px;
+        min-height: 61px;
         background-image: url(../image/icon-to-share.svg);
         background-size: 31px;
         background-repeat: no-repeat;
         background-position: center;
         margin-right: 26px;
     }
+
+    &_type_nav {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(1px);
+        background-color: #264257;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px 20px;
+    }
+
+    &_type_nav-left {
+        background-image: url(../image/back-next.svg);
+        //background-size: 10px 20px;
+    }
+
+    &_type_nav-right {
+        background-image: url(../image/back-next.svg);
+        transform: rotate(180deg);
+    }
+
+    &_type_nav-active {
+        background-color: #00E0C7;
+        background-image: url(../image/back-active.svg);
+        transform: rotate(0deg);
+    }
+
+
 
     padding: 0;
     cursor: pointer;

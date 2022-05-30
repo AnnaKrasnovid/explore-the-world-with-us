@@ -1,0 +1,25 @@
+.tour-packages {
+  background-color: #264257;
+  background-image: url();
+  padding: 100px 0 100px 100px;
+}
+.tour-packages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1620px;
+  width: 100%;
+  padding: 50px 0;
+}
+.tour-packages__nav-container {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
