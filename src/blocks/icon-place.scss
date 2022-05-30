@@ -12,4 +12,10 @@
     background-image: url(../image/icon-t.svg);
     background-repeat: no-repeat;
     background-position: center;
+
+    &_type_card-tour {
+        background-size: 13px 18px;
+        height: 18px;
+        width: 13px;
+    }
 }

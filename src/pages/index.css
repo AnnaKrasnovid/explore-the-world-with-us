@@ -200,8 +200,7 @@
   background-color: #00E0C7;
   border-radius: 10px;
   border: none;
-  max-width: 170px;
-  width: 100%;
+  width: 170px;
   min-height: 50px;
 }
 .button_type_to-share {
@@ -842,12 +841,11 @@
   overflow: hidden;
 }
 .destinations__container-cards {
-  /*display: grid;
-  grid-template-columns: repeat(5, max-content);        
-  column-gap: 100px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 400px) {
   .destinations {
@@ -1026,11 +1024,17 @@
   width: 39px;
   margin-top: 15px;
 }
+.icon-place_type_card-tour {
+  background-size: 13px 18px;
+  height: 18px;
+  width: 13px;
+}
 
 .tour-packages {
   background-color: #264257;
   background-image: url();
   padding: 100px 0 100px 100px;
+  overflow: hidden;
 }
 .tour-packages__container {
   display: -webkit-box;
@@ -1052,14 +1056,26 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.tour-packages__card-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 100px 450px 100px 450px 100px 450px 100px 450px 100px 450px 100px 450px 100px 450px 100px 450px 100px 450px;
+  grid-template-columns: repeat(10, 450px);
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  margin: 0;
+  padding: 0;
+}
 
 .card-tour {
   max-width: 450px;
   width: 100%;
+  overflow: hidden;
 }
 .card-tour__item {
   width: 450px;
-  height: 450px;
+  height: 405px;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -1073,13 +1089,13 @@
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px solid #FFFFFF;
 }
 .card-tour__place {
   width: 100%;
   height: 100%;
-  background-image: url(../image/tour-packages-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   border-radius: 20px;
   top: 0;
@@ -1093,6 +1109,9 @@
   font-weight: 700;
   line-height: 125%;
   margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  max-width: 340px;
 }
 .card-tour__info {
   display: -webkit-box;
@@ -1105,12 +1124,30 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.card-tour__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-tour__icon {
+  background-image: url(../image/day-night.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
 .card-tour__text {
   font-family: "Segoe UI";
   font-size: 22px;
   font-weight: 600;
   line-height: 125%;
   margin: 0;
+  margin-left: 13px;
 }
 
 .star {

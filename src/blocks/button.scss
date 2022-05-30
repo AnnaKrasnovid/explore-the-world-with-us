@@ -59,10 +59,8 @@
 
     &_type_card-tour {
         @include button-green(20px, 125%);
-        max-width: 170px;
-        width: 100%;
-        min-height: 50px;
-      
+        width: 170px;       
+        min-height: 50px;      
     }
 
     &_type_to-share {
@@ -107,8 +105,6 @@
         background-image: url(../image/back-active.svg);
         transform: rotate(0deg);
     }
-
-
 
     padding: 0;
     cursor: pointer;

@@ -2,20 +2,18 @@
 
 .destinations {
     &__container-cards {
-        /*display: grid;
-        grid-template-columns: repeat(5, max-content);        
-        column-gap: 100px;*/
-        display: flex;
-
+       display: flex;
+       margin: 0;
+       padding: 0;
     }
+
     background-color: #2a3950;
     background-image: url(../image/bg-destination.svg);
     background-size: 100%;
     padding: 100px 0 100px $base-side-padding;
-    margin: auto;
-    //display: flex;
-    //flex-direction: column;
+    margin: auto;   
     overflow: hidden;
+
     @media screen and (max-width: 400px) {
         padding-right: $base-side-padding;
 
