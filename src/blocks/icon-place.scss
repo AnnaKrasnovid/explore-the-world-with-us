@@ -2,20 +2,25 @@
 
 .icon-place {
     &_type_destinations {
-        background-size: 27px 39px;
-       
-        //margin: 15px 21px 0 0;   
+        background-size: 27px 39px; 
         height: 39px;
         width: 39px;
         margin-top: 15px   
     }
-    background-image: url(../image/icon-t.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
     &_type_card-tour {
         background-size: 13px 18px;
         height: 18px;
         width: 13px;
     }
+
+    &_type_card-popular-destinations {
+        background-size: 13px 18px;
+        height: 18px;
+        width: 13px;
+    }
+
+    background-image: url(../image/icon-t.svg);
+    background-repeat: no-repeat;
+    background-position: center;    
 }
