@@ -1,22 +1,48 @@
 @import "./mixin.scss";
 
 .tab {
-    &__one {
+    &__one {}
 
-    }
     &__button {
-        @include font-segoe-semibold(30px, 40px);
-        width: 270px;
         height: 85px;
-        background: #F3F6F6;        
-        border-radius: 10px;
-        padding: 0;
-        border: 0;
+        width: 270px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: #F3F6F6;
+        position: relative;
+        top: 10px;
+        left: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
     }
+
+    &__button::before {
+        height: 85px;
+        width: 135px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #F3F6F6;
+        content: "";
+        position: absolute;
+        left: 164px;
+        top: 0px;
+        -webkit-transform: skewX(35deg);
+        transform: skewX(40deg);
+        z-index: -1;
+    }
+
+    &__title {
+        @include font-segoe-semibold(30px, 40px);
+        color: #2A3950;
+    }
+
     &__container {
         padding: 40px 30px 25px;
         background-color: #F3F6F6;
+        border-radius: 0 20px 20px 20px;
     }
+
+
     position: relative;
     z-index: 42;
 }

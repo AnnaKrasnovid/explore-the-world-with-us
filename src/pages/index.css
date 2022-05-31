@@ -494,21 +494,70 @@
   z-index: 42;
 }
 .tab__button {
+  /* width: 270px;
+      height: 85px;
+      background: #F3F6F6;        
+      border-radius: 20px 20px 0 0;
+      padding: 0;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+     position: relative;
+
+     z-index: 45;
+     top: 10px;
+  left: 1px;*/
+  height: 85px;
+  width: 270px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #F3F6F6;
+  position: relative;
+  top: 10px;
+  left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+.tab__button::before {
+  /*content: "";
+  transform: skew(40deg);
+  position: absolute;
+  z-index: 44;
+  left: 104px;
+  top: 0px;*/
+  height: 85px;
+  width: 135px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #F3F6F6;
+  content: "";
+  position: absolute;
+  left: 164px;
+  top: 0px;
+  -webkit-transform: skewX(40deg);
+  transform: skewX(40deg);
+  z-index: -1;
+}
+.tab__title {
   font-family: "Segoe UI";
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
   margin: 0;
-  width: 270px;
-  height: 85px;
-  background: #F3F6F6;
-  border-radius: 10px;
-  padding: 0;
-  border: 0;
+  color: #2A3950;
 }
 .tab__container {
   padding: 40px 30px 25px;
   background-color: #F3F6F6;
+  border-radius: 0 20px 20px 20px;
 }
 
 .form {
