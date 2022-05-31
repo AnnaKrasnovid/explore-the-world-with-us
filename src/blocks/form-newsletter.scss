@@ -1,0 +1,27 @@
+@import "./mixin.scss";
+
+.form-newsletter {
+    &__input {
+        padding: 0;
+        border: 0;
+        outline: none;        
+        height: 75px;
+        flex-basis: 1250px;
+        @include font-segoe-regular(30px, 35px);
+    }
+
+    &__input::placeholder {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    background-color: #fff;
+    max-width: 1480px;
+    width: 100%;
+    min-height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 50px;
+    box-sizing: border-box;
+}

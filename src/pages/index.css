@@ -79,6 +79,10 @@
   width: 202px;
   height: 72px;
 }
+.logo_type_footer {
+  width: 291px;
+  height: 104px;
+}
 
 .button {
   padding: 0;
@@ -243,6 +247,20 @@
   background-image: url(../image/back-active.svg);
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+.button_type_form-newsletter {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  border-radius: 0;
+  width: 300px;
+  min-height: 76px;
+  border: 0;
 }
 
 .lead {
@@ -1039,7 +1057,7 @@
 .tour-packages {
   background-color: #264257;
   background-image: url();
-  padding: 100px 0 100px 100px;
+  padding: 100px 0 100px 7.8%;
   overflow: hidden;
   background-image: url(../image/bg-packeges.png);
   background-repeat: no-repeat;
@@ -1351,4 +1369,174 @@
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
+}
+
+.newsletter {
+  background-color: #2A3950;
+  padding: 100px 7.8%;
+}
+.newsletter__form {
+  background-color: #006270;
+  max-width: 1620px;
+  width: 100%;
+  min-height: 434px;
+  border-radius: 50px;
+  padding: 4.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-newsletter {
+  background-color: #fff;
+  max-width: 1480px;
+  width: 100%;
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 15px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-newsletter__input {
+  padding: 0;
+  border: 0;
+  outline: none;
+  height: 75px;
+  -ms-flex-preferred-size: 1250px;
+      flex-basis: 1250px;
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 0;
+}
+.form-newsletter__input::-webkit-input-placeholder {
+  font-size: 30px;
+  line-height: 35px;
+}
+.form-newsletter__input::-moz-placeholder {
+  font-size: 30px;
+  line-height: 35px;
+}
+.form-newsletter__input:-ms-input-placeholder {
+  font-size: 30px;
+  line-height: 35px;
+}
+.form-newsletter__input::-ms-input-placeholder {
+  font-size: 30px;
+  line-height: 35px;
+}
+.form-newsletter__input::placeholder {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.information {
+  background-color: #2A3950;
+  padding: 50px 7.8% 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 353px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.information__text {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 144%;
+  margin: 0;
+  max-width: 385px;
+  width: 100%;
+  margin-top: 35px;
+}
+.information__title {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.information__list {
+  padding: 0;
+  margin: 25px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 174px;
+}
+.information__info {
+  list-style: none;
+}
+.information__link {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer {
+  background-color: #2A3950;
+  padding: 21px 7.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__copyright {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  color: #00E0C7;
+}
+
+.social-icon {
+  max-width: 315px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.social-icon__point {
+  list-style: none;
+}
+.social-icon__link {
+  text-decoration: none;
+}
+.social-icon__icon {
+  width: 35px;
+  height: 35px;
 }

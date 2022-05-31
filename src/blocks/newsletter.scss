@@ -1,0 +1,23 @@
+@import "./mixin.scss";
+
+.newsletter {
+    &__animation {
+
+    }
+
+    &__car {
+
+    }
+
+    &__form {
+        background-color: #006270;
+        max-width: 1620px;
+        width: 100%;
+        min-height: 434px;
+        border-radius: 50px;
+        padding: 4.33%;
+        box-sizing: border-box;
+    }
+    background-color: #2A3950;
+    padding: 100px $base-side-padding;
+}

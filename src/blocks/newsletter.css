@@ -1,0 +1,14 @@
+.newsletter {
+  background-color: #2A3950;
+  padding: 100px 7.8%;
+}
+.newsletter__form {
+  background-color: #006270;
+  max-width: 1620px;
+  width: 100%;
+  min-height: 434px;
+  border-radius: 50px;
+  padding: 4.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

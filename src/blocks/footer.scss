@@ -1,0 +1,12 @@
+@import "./mixin.scss";
+
+.footer {
+    &__copyright {
+        @include font-segoe-regular(24px, 32px);
+        color: #00E0C7;        
+    }
+    background-color: #2A3950;
+    padding: 21px $base-side-padding;
+    display: flex;
+    justify-content: space-between;
+}
