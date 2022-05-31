@@ -2,6 +2,10 @@
   background-color: #2A3950;
   padding: 100px 7.8%;
 }
+.newsletter__car {
+  width: 294px;
+  height: 174px;
+}
 .newsletter__form {
   background-color: #006270;
   max-width: 1620px;

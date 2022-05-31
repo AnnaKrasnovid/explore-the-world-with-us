@@ -248,6 +248,27 @@
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
+.button_type_popular-destinations {
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  border: 0;
+}
+.button_type_arrow-right {
+  background-image: url(../image/Arrow-right.svg);
+  right: -50px;
+}
+.button_type_arrow-left {
+  background-image: url(../image/Arrow-left.svg);
+  left: -50px;
+}
 .button_type_form-newsletter {
   font-family: "Segoe UI";
   font-size: 30px;
@@ -1255,6 +1276,16 @@
           align-items: center;
   background-image: url(../image/popular-desc-bg.png);
 }
+.popular-destinations__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
 .popular-destinations__card-list {
   display: -ms-grid;
   display: grid;
@@ -1374,6 +1405,10 @@
 .newsletter {
   background-color: #2A3950;
   padding: 100px 7.8%;
+}
+.newsletter__car {
+  width: 294px;
+  height: 174px;
 }
 .newsletter__form {
   background-color: #006270;

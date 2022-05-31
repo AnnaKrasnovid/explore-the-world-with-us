@@ -59,8 +59,8 @@
 
     &_type_card-tour {
         @include button-green(20px, 125%);
-        width: 170px;       
-        min-height: 50px;      
+        width: 170px;
+        min-height: 50px;
     }
 
     &_type_to-share {
@@ -104,6 +104,29 @@
         background-color: #00E0C7;
         background-image: url(../image/back-active.svg);
         transform: rotate(0deg);
+    }
+
+    &_type_popular-destinations {
+        width: 100px;
+        height: 100px;
+        background: #FFFFFF;
+        box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: 2;
+        border: 0;
+    }
+
+    &_type_arrow-right {
+        background-image: url(../image/Arrow-right.svg);
+        right: -50px;
+    }
+
+    &_type_arrow-left {
+        background-image: url(../image/Arrow-left.svg);
+      left: -50px;
     }
 
     &_type_form-newsletter {
