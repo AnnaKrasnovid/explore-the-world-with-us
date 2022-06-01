@@ -10,7 +10,7 @@
         background-color: #F3F6F6;
         position: relative;
         top: 10px;
-        left: 1px;
+        left: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -41,8 +41,7 @@
         background-color: #F3F6F6;
         border-radius: 0 20px 20px 20px;
     }
-
-
     position: relative;
     z-index: 42;
+    width: 100%;
 }

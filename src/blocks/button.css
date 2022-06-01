@@ -41,7 +41,7 @@
   border-radius: 10px;
   border: none;
   width: 220px;
-  min-height: 68px;
+  height: 68px;
 }
 .button_type_intro {
   font-family: "Segoe UI";

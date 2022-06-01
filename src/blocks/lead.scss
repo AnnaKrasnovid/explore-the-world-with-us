@@ -1,157 +1,6 @@
 @import "./mixin.scss";
 
 .lead {
-    &__background {
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        position: absolute;
-    }
-    &__background-deer {
-        background-image: url(../image/lead_deer.png);
-        top: 510px;
-        left: 0;
-        object-fit: fill;
-        z-index: 40;
-        width: 1920px;
-        height: 6630px;
-    }
-    &__background-coast-left {
-        background-image: url(../image/lead_coast-left.png);
-        z-index: 38;
-        top: 350px;
-        left: 0;
-        width: 993px;
-        height: 613px;
-    }
-    &__background-coast-right {
-        background-image: url(../image/lead_coast-right.png);
-        z-index: 38;
-        top: 510px;
-        left: 1032px;
-        width: 888px;
-        height: 470px;
-    }
-    &__background-mountains-left {
-        background-image: url(../image/lead_mountains-left.png);
-        z-index: 34;
-        top: 280px;
-        left: 0px;
-        width: 1618px;
-        height: 504px;
-    }
-    &__background-mountains-right {
-        background-image: url(../image/lead_mountains-right.png);
-        z-index: 37;
-        top: 360px;
-        left: 700px;
-        width: 1224px;
-        height: 352px;
-    }    
-    &__background-mountains {
-        background-image: url(../image/lead_mountains.png);
-        z-index: 32;
-        top: 350px;
-        left: 0px;
-        width: 1920px;
-        height: 300px;
-    }
-    &__background-river-highlights {
-        background-image: url(../image/lead_highlights.png);
-        z-index: 39;
-        top: 600px;
-        left: 700px;
-        width: 708px;
-        height: 293px;
-    }
-    &__background-river-left {
-        background-image: url(../image/lead_river-left.png);
-        z-index: 36;
-        top: 630px;
-        left: 300px;
-        width: 903px;
-        height: 307px;
-    }
-    &__background-river-rigth {
-        background-image: url(../image/lead_river-rigth.png);
-        z-index: 36;
-        top: 590px;
-        left: 800px;
-        width: 901px;
-        height: 372px;
-    }
-    &__background-river-back {
-        background-image: url(../image/river3.png);
-        z-index: 35;
-        top: 600px;
-        left: 0;
-        width: 1920px;
-        height: 397px;
-    }
-    &__background-trees {
-        background-image: url(../image/lead_trees-mon.png);
-        z-index: 36;
-        top: 330px;
-        left: 700px;
-        width: 1177px;
-        height: 275px;
-    }
-    &__background-trees-rigth {
-        background-image: url(../image/lead_trees-rigth.png);
-        z-index: 37;
-        top: 440px;
-        left: 1200px;
-        width: 647px;
-        height: 180px;
-    }
-    &__background-cloud1 {
-        background-image: url(../image/lead_cloud1.png);
-        z-index: 37;
-        top: 110px;
-        left: 100px;
-        width: 650px;
-        height: 177px;
-    }
-    &__background-cloud2 {
-        background-image: url(../image/lead_cloud2.png);
-        z-index: 37;
-        top: 50px;
-        left: 600px;
-        width: 252px;
-        height: 88px;
-    }
-    &__background-cloud3 {
-        background-image: url(../image/cloud_cloud3.png);
-        z-index: 37;
-        top: 100px;
-        left: 1350px;
-        width: 505px;
-        height: 90px;
-    }
-    &__background-house {
-        background-image: url(../image/lead_house.png);
-        z-index: 37;
-        top: 510px;
-        left: 1285px;
-        width: 115px;
-        height: 92px;
-    }
-    &__background-sun {
-        background-image: url(../image/lead_sun.png);
-        z-index: 30;
-        top: 270px;
-        left: 1020px;
-        width: 272px;
-        height: 272px;
-    }
-    &__background-bird {
-        background-image: url(../image/lead_bird.png);
-        width: 42px;
-        height: 10px;
-        z-index: 50;
-        top: 400px;
-        left: 1300px;
-    }
     &__container {
         max-width: 690px;
         width: 100%;        
@@ -174,17 +23,21 @@
         @include font-segoe-regular(20px, 27px);
         color: #006270;
         margin-bottom: 60px;
-    }
+    }    
 
     @include flex-center;
-    background-image: url(../image/0.png);
+    //background-image: url(../image/0.png);
+    background-image: url(../image/bg-lead.jpg);    
+    background-size: 100%;
+    background-color: #2a3950;
+    background-repeat: no-repeat;
     margin-top: -100px;
     padding: 262px $base-side-padding 0;    
     flex-direction: column;
     position: relative;
     z-index: 0;
     overflow: hidden;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+    display: flex;        
+    max-width: 100%;
+    height: 100%;
 }

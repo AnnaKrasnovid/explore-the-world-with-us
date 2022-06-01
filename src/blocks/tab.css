@@ -1,6 +1,7 @@
 .tab {
   position: relative;
   z-index: 42;
+  width: 100%;
 }
 .tab__button {
   height: 85px;
@@ -9,7 +10,7 @@
   background-color: #F3F6F6;
   position: relative;
   top: 10px;
-  left: 1px;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

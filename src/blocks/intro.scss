@@ -5,7 +5,7 @@
        max-width: 751px; 
        height: 440px; 
        background-image: url(../image/Group-back.png);
-        //background-size: 100%;
+        
         background-repeat: no-repeat;
         position: relative;      
     }
@@ -109,6 +109,6 @@
     background-image: url(../image/BG-intro.png);
     padding: 127px 9.79% 120px;
     display: grid;
-    grid-template-columns: /*minmax(280px, 751px)*/751px minmax(280px, 692px);
+    grid-template-columns: 751px minmax(280px, 692px);
     column-gap: 80px;    
 }
