@@ -1,6 +1,6 @@
 .social-icon {
     &__point {
-list-style: none;
+        list-style: none;
     }
 
     &__link {
@@ -11,6 +11,7 @@ list-style: none;
         width: 35px;
         height: 35px;
     }
+
     max-width: 315px;
     width: 100%;
     display: flex;

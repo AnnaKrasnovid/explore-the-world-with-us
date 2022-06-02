@@ -1,12 +1,4 @@
-//$base-width: 1920px;
-//padding: 0 calc(100% - 92.2%)
-//max-width: calc(100% - #{$side-padding});
-
 $base-side-padding: 7.8%;
-
-//@mixin padding-section ($top, $width-block, $bottom, $left){
- //   padding: $top calc((100% - #{$width-block}) / 2) $bottom calc(100% - #{$right});
-//}
 
 @mixin font-segoe-regular($size, $line-height){
     font: {

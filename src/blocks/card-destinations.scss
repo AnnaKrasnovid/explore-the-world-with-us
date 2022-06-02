@@ -7,7 +7,6 @@
         grid-template-columns: 40px 1fr;
         column-gap: 21px;
     }
-
         
     &__title {
         @include font-segoe-semibold(40px, 150%);
@@ -96,8 +95,7 @@
         "text image"
         "info image"
         "buttons image";  
-        list-style: none; 
-        
+        list-style: none;         
     
     @media screen and (max-width: 1150px) {
         grid-template-columns: minmax(280px, max-content);

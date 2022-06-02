@@ -25,8 +25,8 @@
 
     &__container-way {
         display: flex;
-align-items: center;
-margin: 20px;
+        align-items: center;
+        margin: 20px;
     }
 
     &__icon-plane {
@@ -48,7 +48,7 @@ margin: 20px;
     &__title {
         @include font-segoe-semibold(32px, 125%);
         color: #2A3950;
-        margin: 0 20px;  
+        margin: 0 20px;
     }
 
     &__container-info {
@@ -58,7 +58,7 @@ margin: 20px;
     }
 
     &__box {
-        display: flex;       
+        display: flex;
         justify-content: space-between;
         align-items: center
     }
@@ -80,5 +80,5 @@ margin: 20px;
     width: 480px;
     min-height: 478px;
     list-style: none;
-    background-color: #fff;    
+    background-color: #fff;
 }
