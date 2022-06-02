@@ -1,13 +1,15 @@
 @import "./mixin.scss";
+@import "./keyframes.scss";
+
 
 .intro {
     &__container-picture {
-       max-width: 751px; 
-       height: 440px; 
-       background-image: url(../image/Group-back.png);
-        
+        max-width: 751px;
+        height: 440px;
+        background-image: url(../image/Group-back.png);
         background-repeat: no-repeat;
-        position: relative;      
+        position: relative;
+        overflow: hidden;
     }
 
     &__picture {
@@ -19,7 +21,7 @@
 
     &__picture-background-1 {
         background-image: url(../image/Vector-back1.png);
-        max-height: 28px;        
+        max-height: 28px;
         bottom: 0;
         right: 0;
     }
@@ -34,9 +36,12 @@
     &__picture-car {
         background-image: url(../image/Group-car.png);
         top: 180px;
-        left: 143px;
+        //left: 143px;
         width: 332px;
         height: 185px;
+        animation-name: car-intro;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
 
     &__picture-tent {
@@ -45,6 +50,12 @@
         left: 395px;
         width: 321px;
         height: 154px;
+        opacity: 0;
+        animation-name: intro;
+        animation-delay: 2s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+
     }
 
     &__picture-suitcase {
@@ -53,6 +64,11 @@
         left: 296px;
         width: 96px;
         height: 86px;
+        opacity: 0;
+        animation-name: intro;
+        animation-delay: 2.2s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
     }
 
     &__picture-drying {
@@ -61,6 +77,11 @@
         left: 60px;
         width: 618px;
         height: 124px;
+        opacity: 0;
+        animation-name: intro;
+        animation-delay: 2.8s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
     }
 
     &__picture-board {
@@ -69,14 +90,27 @@
         left: 238px;
         width: 43px;
         height: 157px;
+        opacity: 0;
+        animation-name: intro;
+        animation-delay: 2.4s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+
     }
 
     &__picture-ball {
-        background-image: url(../image/Group-ball.png);
+        background-image: url(../image/ball.png);
         top: 340px;
         left: 430px;
         width: 66px;
         height: 51px;
+        opacity: 0;
+        animation-name: ball;
+        animation-delay: 2.6s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+
     }
 
     &__picture-like {
@@ -85,6 +119,11 @@
         left: 470px;
         width: 67px;
         height: 62px;
+        opacity: 0;
+        animation-name: intro;
+        animation-delay: 3s;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
     }
 
 
@@ -110,5 +149,5 @@
     padding: 127px 9.79% 120px;
     display: grid;
     grid-template-columns: 751px minmax(280px, 692px);
-    column-gap: 80px;    
+    column-gap: 80px;
 }

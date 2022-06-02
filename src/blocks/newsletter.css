@@ -1,3 +1,19 @@
+@-webkit-keyframes car-newsletter {
+  0% {
+    left: 1620px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes car-newsletter {
+  0% {
+    left: 1620px;
+  }
+  100% {
+    left: 0;
+  }
+}
 .newsletter {
   background-color: #2A3950;
   padding: 100px 7.8%;
@@ -5,6 +21,12 @@
 .newsletter__car {
   width: 294px;
   height: 174px;
+  -webkit-animation-name: car-newsletter;
+          animation-name: car-newsletter;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .newsletter__form {
   background-color: #006270;

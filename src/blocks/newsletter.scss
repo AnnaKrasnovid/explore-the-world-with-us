@@ -1,5 +1,14 @@
 @import "./mixin.scss";
 
+@keyframes car-newsletter {
+    0% {
+        left: 1620px;       
+    }    
+    100% {
+        left: 0;        
+    }
+}
+
 .newsletter {
     &__animation {
 
@@ -8,6 +17,9 @@
     &__car {
         width: 294px;
         height: 174px;
+        animation-name: car-newsletter;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
     }
 
     &__form {
