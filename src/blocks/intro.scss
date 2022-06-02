@@ -1,7 +1,6 @@
 @import "./mixin.scss";
 @import "./keyframes.scss";
 
-
 .intro {
     &__container-picture {
         max-width: 751px;
@@ -36,7 +35,6 @@
     &__picture-car {
         background-image: url(../image/Group-car.png);
         top: 180px;
-        //left: 143px;
         width: 332px;
         height: 185px;
         animation-name: car-intro;
@@ -55,7 +53,6 @@
         animation-delay: 2s;
         animation-duration: .2s;
         animation-fill-mode: forwards;
-
     }
 
     &__picture-suitcase {
@@ -95,7 +92,6 @@
         animation-delay: 2.4s;
         animation-duration: .2s;
         animation-fill-mode: forwards;
-
     }
 
     &__picture-ball {
@@ -110,7 +106,6 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
         animation-timing-function: linear;
-
     }
 
     &__picture-like {

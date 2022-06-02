@@ -2,24 +2,40 @@
 
 @keyframes car-newsletter {
     0% {
-        left: 1620px;       
-    }    
+        left: 1620px;
+        bottom: 0;
+    }
+    75% {
+        left: 150px;
+        bottom: 0;
+    }
     100% {
-        left: 0;        
+        left: -294px;
+        bottom: 0;
     }
 }
 
 .newsletter {
     &__animation {
-
+        position: relative;
+        min-height: 175px;
+        max-width: 1620px;
+        width: 100%;
+        overflow: hidden;
     }
 
     &__car {
+        background-image: url(../image/car-newsletter.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 1326px;
+        bottom: 0;
         width: 294px;
         height: 174px;
         animation-name: car-newsletter;
         animation-duration: 6s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 
     &__form {
@@ -31,6 +47,7 @@
         padding: 4.33%;
         box-sizing: border-box;
     }
+
     background-color: #2A3950;
     padding: 100px $base-side-padding;
 }
