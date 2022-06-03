@@ -425,59 +425,60 @@
   color: #006270;
 }
 .form__input {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
   height: 68px;
   border: 1px solid #2A3950;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
   margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .form__input::-webkit-input-placeholder {
-  color: #2A3950;
-  padding: 20px;
+  color: #697588;
   font-family: "Segoe UI";
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 125%;
   margin: 0;
 }
 .form__input::-moz-placeholder {
-  color: #2A3950;
-  padding: 20px;
+  color: #697588;
   font-family: "Segoe UI";
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 125%;
   margin: 0;
 }
 .form__input:-ms-input-placeholder {
-  color: #2A3950;
-  padding: 20px;
+  color: #697588;
   font-family: "Segoe UI";
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 125%;
   margin: 0;
 }
 .form__input::-ms-input-placeholder {
-  color: #2A3950;
-  padding: 20px;
+  color: #697588;
   font-family: "Segoe UI";
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 125%;
   margin: 0;
 }
 .form__input::placeholder {
-  color: #2A3950;
-  padding: 20px;
+  color: #697588;
   font-family: "Segoe UI";
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 125%;
   margin: 0;
 }

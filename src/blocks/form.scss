@@ -14,15 +14,18 @@
 
     &__input {
         &::placeholder {
-            color: #2A3950;
+            color: #697588;
+            
+            @include font-segoe-regular(22px, 125%);
+        }    
+        color: #2A3950;
             padding: 20px; 
-            @include font-segoe-semibold(22px, 125%);
-        }       
+            @include font-segoe-semibold(22px, 125%);   
         height: 68px;
         border: 1px solid #2A3950;
         border-radius: 10px;
         box-sizing: border-box;
-        padding: 0;
+        
         margin-top: 5px;
         display: flex;
     }

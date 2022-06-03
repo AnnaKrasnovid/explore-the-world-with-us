@@ -1,0 +1,100 @@
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 290px) 35px minmax(200px, 290px) 35px minmax(200px, 290px) 35px minmax(200px, 290px) 35px 220px;
+  grid-template-columns: repeat(4, minmax(200px, 290px)) 220px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  border: 0;
+  margin: 0;
+  padding: 0 0 15px;
+  width: 100%;
+}
+.form__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__label {
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+  color: #006270;
+}
+.form__input {
+  color: #2A3950;
+  padding: 20px;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
+  height: 68px;
+  border: 1px solid #2A3950;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__input::-webkit-input-placeholder {
+  color: #697588;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+}
+.form__input::-moz-placeholder {
+  color: #697588;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+}
+.form__input:-ms-input-placeholder {
+  color: #697588;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+}
+.form__input::-ms-input-placeholder {
+  color: #697588;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+}
+.form__input::placeholder {
+  color: #697588;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+}
+.form__label-checkbox {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  color: #006270;
+  margin: 0 10px 0;
+}
