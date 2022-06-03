@@ -1,0 +1,66 @@
+.tab {
+  position: relative;
+  z-index: 42;
+  width: 100%;
+}
+.tab__button {
+  height: 85px;
+  width: 270px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #F3F6F6;
+  position: relative;
+  top: 10px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+@media screen and (max-width: 520px) {
+  .tab__button {
+    display: none;
+  }
+}
+.tab__button::before {
+  height: 85px;
+  width: 135px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #F3F6F6;
+  content: "";
+  position: absolute;
+  left: 164px;
+  top: 0px;
+  -webkit-transform: skewX(35deg);
+  transform: skewX(40deg);
+  z-index: -1;
+}
+@media screen and (max-width: 520px) {
+  .tab__button::before {
+    display: none;
+  }
+}
+.tab__title {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 0;
+  color: #2A3950;
+}
+.tab__container {
+  padding: 40px 30px 25px;
+  background-color: #F3F6F6;
+  border-radius: 0 20px 20px 20px;
+}
+@media screen and (max-width: 520px) {
+  .tab__container {
+    border-radius: 20px;
+    padding: 20px 15px;
+  }
+}

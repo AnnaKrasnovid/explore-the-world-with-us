@@ -15,6 +15,10 @@
         align-items: center;
         justify-content: center;
         z-index: 2;
+
+        @media screen and (max-width: 520px) {
+           display: none;          
+        }
     }
 
     &__button::before {
@@ -29,6 +33,10 @@
         -webkit-transform: skewX(35deg);
         transform: skewX(40deg);
         z-index: -1;
+
+        @media screen and (max-width: 520px) {
+            display: none;            
+         }
     }
 
     &__title {
@@ -40,6 +48,11 @@
         padding: 40px 30px 25px;
         background-color: #F3F6F6;
         border-radius: 0 20px 20px 20px;
+
+        @media screen and (max-width: 520px) {
+            border-radius: 20px;  
+            padding: 20px 15px;      
+         }
     }
     
     position: relative;

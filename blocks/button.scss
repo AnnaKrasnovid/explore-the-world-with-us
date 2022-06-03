@@ -12,12 +12,20 @@
         width: 230px;
         min-height: 64px;
         margin-bottom: 160px;
+
+        @media screen and (max-width: 1700px) {
+            margin-bottom: 50px;
+        }       
     }
 
     &_type_form {
         @include button-green(22px, 125%);
         width: 220px;
         height: 68px;
+
+        @media screen and (max-width: 1150px) {
+            margin-top: 20px;
+        }
     }
 
     &_type_intro {

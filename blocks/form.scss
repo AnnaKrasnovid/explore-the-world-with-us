@@ -3,39 +3,62 @@
 .form {
     &__input-container {
         display: flex;
-        flex-direction: column;
-        //margin-right: 35px;
+        flex-direction: column;        
     }
 
     &__label {
         @include font-segoe-semibold(24px, 32px);
-        color: #006270;        
+        color: #006270;
+
+        @media screen and (max-width: 520px) {
+            @include font-segoe-semibold(18px, 32px);
+        }
     }
 
     &__input {
         &::placeholder {
             color: #697588;
-            
             @include font-segoe-regular(22px, 125%);
-        }    
+
+            @media screen and (max-width: 1500px) {
+                @include font-segoe-regular(18px, 125%);
+            }
+        }
+
         color: #2A3950;
-            padding: 20px; 
-            @include font-segoe-semibold(22px, 125%);   
+        padding: 20px;
+        @include font-segoe-semibold(22px, 125%);
         height: 68px;
         border: 1px solid #2A3950;
         border-radius: 10px;
         box-sizing: border-box;
-        
         margin-top: 5px;
         display: flex;
+
+        @media screen and (max-width: 1500px) {
+            @include font-segoe-regular(18px, 125%);
+        }
+
+        @media screen and (max-width: 1023px) {
+            height: 48px;
+        }
+
+        @media screen and (max-width: 520px) {
+            padding: 10px;
+           
+        }
     }
 
     &__label-checkbox {
         @include font-segoe-semibold(22px, 30px);
         color: #006270;
         margin: 0 10px 0;
-    }    
-    
+
+        @media screen and (max-width: 520px) {
+            @include font-segoe-semibold(16px, 28px);
+        }
+    }
+
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 290px)) 220px;
     align-items: end;
@@ -44,4 +67,18 @@
     margin: 0;
     padding: 0 0 15px;
     width: 100%;
+
+    @media screen and (max-width: 1500px) {
+        column-gap: 15px;
+        grid-template-columns: repeat(4, minmax(150px, 290px)) 220px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        column-gap: 15px;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    @media screen and (max-width: 520px) {
+        grid-template-columns: 1fr;
+    }
 }

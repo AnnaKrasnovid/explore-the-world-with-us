@@ -31,6 +31,15 @@
   margin: 0;
   color: #006270;
 }
+@media screen and (max-width: 520px) {
+  .form__label {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+  }
+}
 .form__input {
   color: #2A3950;
   padding: 20px;
@@ -89,6 +98,62 @@
   line-height: 125%;
   margin: 0;
 }
+@media screen and (max-width: 1500px) {
+  .form__input::-webkit-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::-moz-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input:-ms-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::-ms-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .form__input {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .form__input {
+    height: 48px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .form__input {
+    padding: 10px;
+  }
+}
 .form__label-checkbox {
   font-family: "Segoe UI";
   font-size: 22px;
@@ -97,4 +162,37 @@
   margin: 0;
   color: #006270;
   margin: 0 10px 0;
+}
+@media screen and (max-width: 520px) {
+  .form__label-checkbox {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .form {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    -ms-grid-columns: minmax(150px, 290px) 15px minmax(150px, 290px) 15px minmax(150px, 290px) 15px minmax(150px, 290px) 15px 220px;
+    grid-template-columns: repeat(4, minmax(150px, 290px)) 220px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .form {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    -ms-grid-columns: minmax(100px, 1fr) 15px minmax(100px, 1fr);
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+@media screen and (max-width: 520px) {
+  .form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }

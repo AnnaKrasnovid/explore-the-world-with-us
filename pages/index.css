@@ -117,6 +117,11 @@
   min-height: 64px;
   margin-bottom: 160px;
 }
+@media screen and (max-width: 1700px) {
+  .button_type_lead {
+    margin-bottom: 50px;
+  }
+}
 .button_type_form {
   font-family: "Segoe UI";
   font-size: 22px;
@@ -128,6 +133,11 @@
   border: none;
   width: 220px;
   height: 68px;
+}
+@media screen and (max-width: 1150px) {
+  .button_type_form {
+    margin-top: 20px;
+  }
 }
 .button_type_intro {
   font-family: "Segoe UI";
@@ -330,6 +340,26 @@
   color: #006270;
   text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 1439px) {
+  .lead__title {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .lead__title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lead__title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .lead__title {
+    font-size: 28px;
+  }
+}
 .lead__subtitle {
   font-family: "Segoe UI";
   font-size: 20px;
@@ -338,6 +368,38 @@
   margin: 0;
   color: #006270;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1023px) {
+  .lead__subtitle {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lead__subtitle {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 424px) {
+  .lead__subtitle {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .lead {
+    padding-top: 160px;
+  }
 }
 
 .tab {
@@ -364,6 +426,11 @@
           justify-content: center;
   z-index: 2;
 }
+@media screen and (max-width: 520px) {
+  .tab__button {
+    display: none;
+  }
+}
 .tab__button::before {
   height: 85px;
   width: 135px;
@@ -377,6 +444,11 @@
   transform: skewX(40deg);
   z-index: -1;
 }
+@media screen and (max-width: 520px) {
+  .tab__button::before {
+    display: none;
+  }
+}
 .tab__title {
   font-family: "Segoe UI";
   font-size: 30px;
@@ -389,6 +461,12 @@
   padding: 40px 30px 25px;
   background-color: #F3F6F6;
   border-radius: 0 20px 20px 20px;
+}
+@media screen and (max-width: 520px) {
+  .tab__container {
+    border-radius: 20px;
+    padding: 20px 15px;
+  }
 }
 
 .form {
@@ -423,6 +501,15 @@
   line-height: 32px;
   margin: 0;
   color: #006270;
+}
+@media screen and (max-width: 520px) {
+  .form__label {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+  }
 }
 .form__input {
   color: #2A3950;
@@ -482,6 +569,62 @@
   line-height: 125%;
   margin: 0;
 }
+@media screen and (max-width: 1500px) {
+  .form__input::-webkit-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::-moz-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input:-ms-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::-ms-input-placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+  .form__input::placeholder {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .form__input {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .form__input {
+    height: 48px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .form__input {
+    padding: 10px;
+  }
+}
 .form__label-checkbox {
   font-family: "Segoe UI";
   font-size: 22px;
@@ -490,6 +633,39 @@
   margin: 0;
   color: #006270;
   margin: 0 10px 0;
+}
+@media screen and (max-width: 520px) {
+  .form__label-checkbox {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .form {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    -ms-grid-columns: minmax(150px, 290px) 15px minmax(150px, 290px) 15px minmax(150px, 290px) 15px minmax(150px, 290px) 15px 220px;
+    grid-template-columns: repeat(4, minmax(150px, 290px)) 220px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .form {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    -ms-grid-columns: minmax(100px, 1fr) 15px minmax(100px, 1fr);
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}
+@media screen and (max-width: 520px) {
+  .form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 @-webkit-keyframes car-intro {
