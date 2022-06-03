@@ -1,19 +1,5 @@
 @import "./mixin.scss";
-
-@keyframes car-newsletter {
-    0% {
-        left: 1620px;
-        bottom: 0;
-    }
-    75% {
-        left: 150px;
-        bottom: 0;
-    }
-    100% {
-        left: -294px;
-        bottom: 0;
-    }
-}
+@import "./keyframes.scss";
 
 .newsletter {
     &__animation {
@@ -28,14 +14,15 @@
         background-image: url(../image/car-newsletter.png);
         background-repeat: no-repeat;
         position: absolute;
-        left: 1326px;
+        left: 1620px;
         bottom: 0;
         width: 294px;
         height: 174px;
-        animation-name: car-newsletter;
+        
         animation-duration: 6s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;        
     }
 
     &__form {
@@ -50,4 +37,8 @@
 
     background-color: #2A3950;
     padding: 100px $base-side-padding;
+}
+
+.animation-car-newsletter_active {
+    animation-name: car-newsletter;
 }

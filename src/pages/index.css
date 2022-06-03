@@ -392,9 +392,6 @@
 }
 
 .form {
-  /*display: flex;
-  justify-content: space-between;
-  align-items: flex-end;*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(200px, 290px) 35px minmax(200px, 290px) 35px minmax(200px, 290px) 35px minmax(200px, 290px) 35px 220px;
@@ -428,8 +425,6 @@
   color: #006270;
 }
 .form__input {
-  /*max-width: 290px;
-  width: 100%;*/
   height: 68px;
   border: 1px solid #2A3950;
   border-radius: 10px;
@@ -496,9 +491,6 @@
   margin: 0 10px 0;
 }
 
-/*.popup__input::placeholder {
-    color: #000000;
-  }*/
 @-webkit-keyframes car-intro {
   0% {
     left: 751px;
@@ -509,6 +501,7 @@
     top: 180px;
   }
 }
+
 @keyframes car-intro {
   0% {
     left: 751px;
@@ -615,6 +608,34 @@
     top: 340px;
   }
 }
+@-webkit-keyframes car-newsletter {
+  0% {
+    left: 1620px;
+    bottom: 0;
+  }
+  75% {
+    left: 150px;
+    bottom: 0;
+  }
+  100% {
+    left: -294px;
+    bottom: 0;
+  }
+}
+@keyframes car-newsletter {
+  0% {
+    left: 1620px;
+    bottom: 0;
+  }
+  75% {
+    left: 150px;
+    bottom: 0;
+  }
+  100% {
+    left: -294px;
+    bottom: 0;
+  }
+}
 .intro {
   background-color: #2a3950;
   background-image: url(../image/BG-intro.png);
@@ -641,39 +662,36 @@
   background-repeat: no-repeat;
   position: absolute;
 }
-.intro__picture-background-1 {
+.intro__picture_type_picture-background-1 {
   background-image: url(../image/Vector-back1.png);
   max-height: 28px;
   bottom: 0;
   right: 0;
 }
-.intro__picture-background-2 {
+.intro__picture_type_picture-background-2 {
   background-image: url(../image/Vector-back2.png);
   max-height: 8px;
   bottom: 36px;
   right: 0;
 }
-.intro__picture-car {
+.intro__picture_type_picture-car {
   background-image: url(../image/Group-car.png);
+  left: 751px;
   top: 180px;
   width: 332px;
   height: 185px;
-  -webkit-animation-name: car-intro;
-          animation-name: car-intro;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.intro__picture-tent {
+.intro__picture_type_picture-tent {
   background-image: url(../image/Group-tent.png);
   top: 228px;
   left: 395px;
   width: 321px;
   height: 154px;
   opacity: 0;
-  -webkit-animation-name: intro;
-          animation-name: intro;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation-duration: 0.2s;
@@ -681,15 +699,13 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.intro__picture-suitcase {
+.intro__picture_type_picture-suitcase {
   background-image: url(../image/Group-suitcase.png);
   top: 300px;
   left: 296px;
   width: 96px;
   height: 86px;
   opacity: 0;
-  -webkit-animation-name: intro;
-          animation-name: intro;
   -webkit-animation-delay: 2.2s;
           animation-delay: 2.2s;
   -webkit-animation-duration: 0.2s;
@@ -697,15 +713,13 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.intro__picture-drying {
+.intro__picture_type_picture-drying {
   background-image: url(../image/Group-drying.png);
   top: 245px;
   left: 60px;
   width: 618px;
   height: 124px;
   opacity: 0;
-  -webkit-animation-name: intro;
-          animation-name: intro;
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s;
   -webkit-animation-duration: 0.2s;
@@ -713,15 +727,13 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.intro__picture-board {
+.intro__picture_type_picture-board {
   background-image: url(../image/Group-board.png);
   top: 215px;
   left: 238px;
   width: 43px;
   height: 157px;
   opacity: 0;
-  -webkit-animation-name: intro;
-          animation-name: intro;
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
   -webkit-animation-duration: 0.2s;
@@ -729,15 +741,13 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.intro__picture-ball {
+.intro__picture_type_picture-ball {
   background-image: url(../image/ball.png);
   top: 340px;
   left: 430px;
   width: 66px;
   height: 51px;
   opacity: 0;
-  -webkit-animation-name: ball;
-          animation-name: ball;
   -webkit-animation-delay: 2.6s;
           animation-delay: 2.6s;
   -webkit-animation-duration: 3s;
@@ -747,15 +757,13 @@
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
-.intro__picture-like {
+.intro__picture_type_picture-like {
   background-image: url(../image/Group-like.png);
   top: 180px;
   left: 470px;
   width: 67px;
   height: 62px;
   opacity: 0;
-  -webkit-animation-name: intro;
-          animation-name: intro;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   -webkit-animation-duration: 0.2s;
@@ -783,6 +791,21 @@
   color: #FFFFFF;
   opacity: 0.7;
   margin: 0;
+}
+
+.animation-intro_active {
+  -webkit-animation-name: intro;
+          animation-name: intro;
+}
+
+.animation-ball_active {
+  -webkit-animation-name: ball;
+          animation-name: ball;
+}
+
+.animation-car-intro_active {
+  -webkit-animation-name: car-intro;
+          animation-name: car-intro;
 }
 
 .title {
@@ -1468,21 +1491,64 @@
   height: 20px;
 }
 
-@-webkit-keyframes car-newsletter {
+@keyframes car-intro {
   0% {
-    left: 1620px;
-    bottom: 0;
-  }
-  75% {
-    left: 150px;
-    bottom: 0;
+    left: 751px;
+    top: 180px;
   }
   100% {
-    left: -294px;
-    bottom: 0;
+    left: 143px;
+    top: 180px;
   }
 }
-
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ball {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    top: 240px;
+  }
+  30% {
+    opacity: 1;
+    top: 340px;
+  }
+  40% {
+    opacity: 1;
+    top: 260px;
+  }
+  50% {
+    opacity: 1;
+    top: 340px;
+  }
+  60% {
+    opacity: 1;
+    top: 280px;
+  }
+  70% {
+    opacity: 1;
+    top: 340px;
+  }
+  80% {
+    opacity: 1;
+    top: 300px;
+  }
+  100% {
+    opacity: 1;
+    top: 340px;
+  }
+}
 @keyframes car-newsletter {
   0% {
     left: 1620px;
@@ -1512,18 +1578,18 @@
   background-image: url(../image/car-newsletter.png);
   background-repeat: no-repeat;
   position: absolute;
-  left: 1326px;
+  left: 1620px;
   bottom: 0;
   width: 294px;
   height: 174px;
-  -webkit-animation-name: car-newsletter;
-          animation-name: car-newsletter;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .newsletter__form {
   background-color: #006270;
@@ -1534,6 +1600,11 @@
   padding: 4.33%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.animation-car-newsletter_active {
+  -webkit-animation-name: car-newsletter;
+          animation-name: car-newsletter;
 }
 
 .form-newsletter {
@@ -1747,5 +1818,19 @@
   100% {
     opacity: 1;
     top: 340px;
+  }
+}
+@keyframes car-newsletter {
+  0% {
+    left: 1620px;
+    bottom: 0;
+  }
+  75% {
+    left: 150px;
+    bottom: 0;
+  }
+  100% {
+    left: -294px;
+    bottom: 0;
   }
 }
