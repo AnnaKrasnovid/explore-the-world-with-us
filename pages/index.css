@@ -1,298 +1,5 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts/fonts.css";
-.root {
-  width: 1920px;
-  color: #ffffff;
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: auto;
-}
-
-.page {
-  margin: auto;
-}
-
-.header {
-  -webkit-box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 14px 7.8%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: relative;
-  z-index: 55;
-}
-.header__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.header__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header__icon {
-  width: 35px;
-  height: 35px;
-  margin: 10px;
-}
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.header__title {
-  font-family: "Segoe UI";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  margin: 0;
-  color: #2A3950;
-  margin: 0;
-}
-.header__subtitle {
-  font-family: "Segoe UI";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0;
-  color: #2A3950;
-}
-
-.logo {
-  width: 202px;
-  height: 72px;
-}
-.logo_type_footer {
-  width: 291px;
-  height: 104px;
-}
-
-.button {
-  padding: 0;
-  cursor: pointer;
-}
-.button_type_header {
-  font-family: "Segoe UI";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 27px;
-  color: #FFFFFF;
-  background-color: #2A3950;
-  border-radius: 8px;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-width: 2px;
-  width: 158px;
-  min-height: 50px;
-}
-.button_type_lead {
-  font-family: "Segoe UI";
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #FFFFFF;
-  background-color: #2A3950;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #FFFFFF;
-  border-width: 2px;
-  width: 230px;
-  min-height: 64px;
-  margin-bottom: 160px;
-}
-@media screen and (max-width: 1700px) {
-  .button_type_lead {
-    margin-bottom: 50px;
-  }
-}
-.button_type_form {
-  font-family: "Segoe UI";
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 125%;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 220px;
-  height: 68px;
-}
-@media screen and (max-width: 1150px) {
-  .button_type_form {
-    margin-top: 20px;
-  }
-}
-.button_type_intro {
-  font-family: "Segoe UI";
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 125%;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 215px;
-  min-height: 68px;
-  border: 2px solid #FFFFFF;
-}
-.button_type_card-booking {
-  font-family: "Segoe UI";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 125%;
-  margin: 0;
-  width: 89px;
-  min-height: 30px;
-  border: 1px solid #006270;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  background-color: #FFFFFF;
-}
-.button_type_card-booking-green {
-  font-family: "Segoe UI";
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 125%;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 89px;
-  min-height: 30px;
-}
-.button_type_card-destinations {
-  font-family: "Segoe UI";
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 29px;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 220px;
-  min-height: 60px;
-  border: 2px solid #FFFFFF;
-  -webkit-box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
-          box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
-}
-.button_type_tour-packages {
-  font-family: "Segoe UI";
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 125%;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 250px;
-  min-height: 65px;
-}
-.button_type_card-tour {
-  font-family: "Segoe UI";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 125%;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  width: 170px;
-  min-height: 50px;
-}
-.button_type_to-share {
-  padding: 0;
-  border: 0;
-  background: rgba(0, 224, 199, 0.2);
-  border-radius: 50%;
-  width: 61px;
-  min-height: 61px;
-  background-image: url(../image/icon-to-share.svg);
-  background-size: 31px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 26px;
-}
-.button_type_nav {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #FFFFFF;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-  background-color: #264257;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px 20px;
-}
-.button_type_nav-left {
-  background-image: url(../image/back-next.svg);
-}
-.button_type_nav-right {
-  background-image: url(../image/back-next.svg);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.button_type_nav-active {
-  background-color: #00E0C7;
-  background-image: url(../image/back-active.svg);
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-.button_type_popular-destinations {
-  width: 100px;
-  height: 100px;
-  background: #FFFFFF;
-  -webkit-box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
-          box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  z-index: 2;
-  border: 0;
-}
-.button_type_arrow-right {
-  background-image: url(../image/Arrow-right.svg);
-  right: -50px;
-}
-.button_type_arrow-left {
-  background-image: url(../image/Arrow-left.svg);
-  left: -50px;
-}
-.button_type_form-newsletter {
-  font-family: "Segoe UI";
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 35px;
-  color: #2A3950;
-  background-color: #00E0C7;
-  border-radius: 10px;
-  border: none;
-  border-radius: 0;
-  width: 300px;
-  min-height: 76px;
-  border: 0;
-}
-
 @-webkit-keyframes car-intro {
   0% {
     left: 751px;
@@ -303,7 +10,6 @@
     top: 180px;
   }
 }
-
 @keyframes car-intro {
   0% {
     left: 751px;
@@ -692,6 +398,506 @@
     opacity: 1;
     -webkit-transform: scale(2, 2);
             transform: scale(2, 2);
+  }
+}
+@keyframes bg-bird {
+  0% {
+    top: 400px;
+    left: 1300px;
+    opacity: 1;
+  }
+  100% {
+    top: 200px;
+    left: 2000px;
+    opacity: 1;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+.root {
+  width: 1920px;
+  color: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: auto;
+}
+
+.page {
+  margin: auto;
+}
+
+.header {
+  -webkit-box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 44px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 7.8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 55;
+}
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__icon {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header__title {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  color: #2A3950;
+  margin: 0;
+}
+.header__subtitle {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  color: #2A3950;
+}
+
+.logo {
+  width: 202px;
+  height: 72px;
+}
+.logo_type_footer {
+  width: 291px;
+  height: 104px;
+}
+
+.button {
+  padding: 0;
+  cursor: pointer;
+}
+.button_type_header {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #FFFFFF;
+  background-color: #2A3950;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  width: 158px;
+  min-height: 50px;
+}
+.button_type_lead {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #FFFFFF;
+  background-color: #2A3950;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 2px;
+  width: 230px;
+  min-height: 64px;
+  margin-bottom: 160px;
+}
+@media screen and (max-width: 1700px) {
+  .button_type_lead {
+    margin-bottom: 50px;
+  }
+}
+.button_type_form {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  height: 68px;
+}
+@media screen and (max-width: 1150px) {
+  .button_type_form {
+    margin-top: 20px;
+  }
+}
+.button_type_intro {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 215px;
+  min-height: 68px;
+  border: 2px solid #FFFFFF;
+}
+.button_type_card-booking {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+  width: 89px;
+  min-height: 30px;
+  border: 1px solid #006270;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.button_type_card-booking-green {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 89px;
+  min-height: 30px;
+}
+.button_type_card-destinations {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  min-height: 60px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
+          box-shadow: 3px 5px 10px rgba(0, 224, 199, 0.25);
+}
+.button_type_tour-packages {
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  min-height: 65px;
+}
+.button_type_card-tour {
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  width: 170px;
+  min-height: 50px;
+}
+.button_type_to-share {
+  padding: 0;
+  border: 0;
+  background: rgba(0, 224, 199, 0.2);
+  border-radius: 50%;
+  width: 61px;
+  min-height: 61px;
+  background-image: url(../image/icon-to-share.svg);
+  background-size: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 26px;
+}
+.button_type_nav {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  background-color: #264257;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 20px;
+}
+.button_type_nav-left {
+  background-image: url(../image/back-next.svg);
+}
+.button_type_nav-right {
+  background-image: url(../image/back-next.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.button_type_nav-active {
+  background-color: #00E0C7;
+  background-image: url(../image/back-active.svg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.button_type_popular-destinations {
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  border: 0;
+}
+.button_type_arrow-right {
+  background-image: url(../image/Arrow-right.svg);
+  right: -50px;
+}
+.button_type_arrow-left {
+  background-image: url(../image/Arrow-left.svg);
+  left: -50px;
+}
+.button_type_form-newsletter {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #2A3950;
+  background-color: #00E0C7;
+  border-radius: 10px;
+  border: none;
+  border-radius: 0;
+  width: 300px;
+  min-height: 76px;
+  border: 0;
+}
+
+@keyframes car-intro {
+  0% {
+    left: 751px;
+    top: 180px;
+  }
+  100% {
+    left: 143px;
+    top: 180px;
+  }
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ball {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    top: 240px;
+  }
+  30% {
+    opacity: 1;
+    top: 340px;
+  }
+  40% {
+    opacity: 1;
+    top: 260px;
+  }
+  50% {
+    opacity: 1;
+    top: 340px;
+  }
+  60% {
+    opacity: 1;
+    top: 280px;
+  }
+  70% {
+    opacity: 1;
+    top: 340px;
+  }
+  80% {
+    opacity: 1;
+    top: 300px;
+  }
+  100% {
+    opacity: 1;
+    top: 340px;
+  }
+}
+@keyframes car-newsletter {
+  0% {
+    left: 1620px;
+    bottom: 0;
+  }
+  75% {
+    left: 150px;
+    bottom: 0;
+  }
+  100% {
+    left: -294px;
+    bottom: 0;
+  }
+}
+@keyframes bg-mountains-left {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    top: 280px;
+    left: 0px;
+  }
+}
+@keyframes bg-mountains-center {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    top: 350px;
+    left: 0px;
+  }
+}
+@keyframes bg-mountains-right {
+  0% {
+    left: 2620px;
+    top: 360;
+  }
+  100% {
+    top: 360px;
+    left: 700px;
+  }
+}
+@keyframes bg-coast-left {
+  0% {
+    left: -993px;
+    top: 350px;
+  }
+  100% {
+    top: 350px;
+    left: 0;
+  }
+}
+@keyframes bg-coast-right {
+  0% {
+    top: 510px;
+    left: 2000px;
+  }
+  100% {
+    top: 510px;
+    left: 1032px;
+  }
+}
+@keyframes bg-trees {
+  0% {
+    opacity: 1;
+    top: 430px;
+    left: 700px;
+  }
+  100% {
+    opacity: 1;
+    top: 330px;
+    left: 700px;
+  }
+}
+@keyframes bg-trees-house-rigth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bg-sun {
+  0% {
+    top: 700px;
+    left: 700px;
+  }
+  100% {
+    top: 270px;
+    left: 1020px;
+  }
+}
+@keyframes bg-river {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bg-cloud-1 {
+  0% {
+    top: 110px;
+    left: -650px;
+    opacity: 1;
+  }
+  100% {
+    top: 110px;
+    left: 2500px;
+  }
+}
+@keyframes bg-cloud-2 {
+  0% {
+    top: 50px;
+    left: -250px;
+    opacity: 1;
+  }
+  100% {
+    top: 50px;
+    left: 2000px;
+  }
+}
+@keyframes bg-cloud-3 {
+  0% {
+    top: 100px;
+    left: -550px;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    left: 2550px;
   }
 }
 @keyframes bg-bird {
@@ -2794,212 +3000,4 @@
 .social-icon__icon {
   width: 35px;
   height: 35px;
-}
-
-@keyframes car-intro {
-  0% {
-    left: 751px;
-    top: 180px;
-  }
-  100% {
-    left: 143px;
-    top: 180px;
-  }
-}
-@keyframes intro {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes ball {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-    top: 240px;
-  }
-  30% {
-    opacity: 1;
-    top: 340px;
-  }
-  40% {
-    opacity: 1;
-    top: 260px;
-  }
-  50% {
-    opacity: 1;
-    top: 340px;
-  }
-  60% {
-    opacity: 1;
-    top: 280px;
-  }
-  70% {
-    opacity: 1;
-    top: 340px;
-  }
-  80% {
-    opacity: 1;
-    top: 300px;
-  }
-  100% {
-    opacity: 1;
-    top: 340px;
-  }
-}
-@keyframes car-newsletter {
-  0% {
-    left: 1620px;
-    bottom: 0;
-  }
-  75% {
-    left: 150px;
-    bottom: 0;
-  }
-  100% {
-    left: -294px;
-    bottom: 0;
-  }
-}
-@keyframes bg-mountains-left {
-  0% {
-    left: 0;
-    top: 0;
-  }
-  100% {
-    top: 280px;
-    left: 0px;
-  }
-}
-@keyframes bg-mountains-center {
-  0% {
-    left: 0;
-    top: 0;
-  }
-  100% {
-    top: 350px;
-    left: 0px;
-  }
-}
-@keyframes bg-mountains-right {
-  0% {
-    left: 2620px;
-    top: 360;
-  }
-  100% {
-    top: 360px;
-    left: 700px;
-  }
-}
-@keyframes bg-coast-left {
-  0% {
-    left: -993px;
-    top: 350px;
-  }
-  100% {
-    top: 350px;
-    left: 0;
-  }
-}
-@keyframes bg-coast-right {
-  0% {
-    top: 510px;
-    left: 2000px;
-  }
-  100% {
-    top: 510px;
-    left: 1032px;
-  }
-}
-@keyframes bg-trees {
-  0% {
-    opacity: 1;
-    top: 430px;
-    left: 700px;
-  }
-  100% {
-    opacity: 1;
-    top: 330px;
-    left: 700px;
-  }
-}
-@keyframes bg-trees-house-rigth {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes bg-sun {
-  0% {
-    top: 700px;
-    left: 700px;
-  }
-  100% {
-    top: 270px;
-    left: 1020px;
-  }
-}
-@keyframes bg-river {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes bg-cloud-1 {
-  0% {
-    top: 110px;
-    left: -650px;
-    opacity: 1;
-  }
-  100% {
-    top: 110px;
-    left: 2500px;
-  }
-}
-@keyframes bg-cloud-2 {
-  0% {
-    top: 50px;
-    left: -250px;
-    opacity: 1;
-  }
-  100% {
-    top: 50px;
-    left: 2000px;
-  }
-}
-@keyframes bg-cloud-3 {
-  0% {
-    top: 100px;
-    left: -550px;
-    opacity: 1;
-  }
-  100% {
-    top: 100px;
-    left: 2550px;
-  }
-}
-@keyframes bg-bird {
-  0% {
-    top: 400px;
-    left: 1300px;
-    opacity: 1;
-  }
-  100% {
-    top: 200px;
-    left: 2000px;
-    opacity: 1;
-    -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
-  }
 }
