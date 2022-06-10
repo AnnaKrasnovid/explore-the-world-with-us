@@ -10,9 +10,9 @@
         @include font-segoe-semibold(24px, 32px);
         color: #006270;
 
-        @media screen and (max-width: 520px) {
+        /*@media screen and (max-width: 520px) {
             @include font-segoe-semibold(18px, 32px);
-        }
+        }*/
     }
 
     &__input {
@@ -35,7 +35,7 @@
         margin-top: 5px;
         display: flex;
 
-        @media screen and (max-width: 1500px) {
+        /*@media screen and (max-width: 1500px) {
             @include font-segoe-regular(18px, 125%);
         }
 
@@ -44,9 +44,8 @@
         }
 
         @media screen and (max-width: 520px) {
-            padding: 10px;
-           
-        }
+            padding: 10px;           
+        }*/
     }
 
     &__label-checkbox {
@@ -54,9 +53,9 @@
         color: #006270;
         margin: 0 10px 0;
 
-        @media screen and (max-width: 520px) {
+        /*@media screen and (max-width: 520px) {
             @include font-segoe-semibold(16px, 28px);
-        }
+        }*/
     }
 
     display: grid;
@@ -68,7 +67,7 @@
     padding: 0 0 15px;
     width: 100%;
 
-    @media screen and (max-width: 1500px) {
+    /*@media screen and (max-width: 1500px) {
         column-gap: 15px;
         grid-template-columns: repeat(4, minmax(150px, 290px)) 220px;
     }
@@ -80,5 +79,5 @@
 
     @media screen and (max-width: 520px) {
         grid-template-columns: 1fr;
-    }
+    }*/
 }

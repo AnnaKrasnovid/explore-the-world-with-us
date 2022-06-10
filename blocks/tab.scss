@@ -1,7 +1,9 @@
 @import "./mixin.scss";
 
 .tab {
-    &__one {}
+    &__one {
+        width: 1620px;
+    }
 
     &__button {
         height: 85px;
@@ -16,9 +18,9 @@
         justify-content: center;
         z-index: 2;
 
-        @media screen and (max-width: 520px) {
+        /*@media screen and (max-width: 520px) {
            display: none;          
-        }
+        }*/
     }
 
     &__button::before {
@@ -34,9 +36,9 @@
         transform: skewX(40deg);
         z-index: -1;
 
-        @media screen and (max-width: 520px) {
+       /* @media screen and (max-width: 520px) {
             display: none;            
-         }
+         }*/
     }
 
     &__title {
@@ -49,13 +51,13 @@
         background-color: #F3F6F6;
         border-radius: 0 20px 20px 20px;
 
-        @media screen and (max-width: 520px) {
+       /* @media screen and (max-width: 520px) {
             border-radius: 20px;  
             padding: 20px 15px;      
-         }
+         }*/
     }
     
     position: relative;
     z-index: 42;
-    width: 100%;
+    //width: 100%;
 }

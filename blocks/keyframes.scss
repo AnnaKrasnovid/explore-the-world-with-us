@@ -73,3 +73,163 @@
         bottom: 0;
     }
 }
+
+@keyframes bg-mountains-left {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        top: 280px;
+        left: 0px;
+    }
+}
+
+@keyframes bg-mountains-center {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        top: 350px;
+        left: 0px;
+    }
+}
+
+@keyframes bg-mountains-right {
+    0% {
+        left: 2620px;
+        top: 360;
+    }
+
+    100% {
+        top: 360px;
+        left: 700px;
+    }
+}
+
+@keyframes bg-coast-left {
+    0% {
+        left: -993px;
+        top: 350px;
+    }
+
+    100% {
+        top: 350px;
+        left: 0;
+    }
+}
+
+@keyframes bg-coast-right {
+    0% {
+        top: 510px;
+        left: 2000px;
+    }
+
+    100% {
+        top: 510px;
+        left: 1032px;
+    }
+}
+
+@keyframes bg-trees {
+    0% {
+        opacity: 1;
+        top: 430px;
+        left: 700px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 330px;
+        left: 700px;
+    }
+}
+
+@keyframes bg-trees-house-rigth {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bg-sun {
+    0% {
+        top: 700px;
+        left: 700px;
+    }
+
+    100% {
+        top: 270px;
+        left: 1020px;
+    }
+}
+
+@keyframes bg-river {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bg-cloud-1 {
+    0% {
+        top: 110px;        
+        left: -650px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 110px; 
+        left: 2500px;
+    }
+}
+
+@keyframes bg-cloud-2 {
+    0% {
+        top: 50px;
+        left: -250px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 50px;
+        left: 2000px;
+    }
+}
+
+@keyframes bg-cloud-3 {
+    0% {
+        top: 100px; 
+        left: -550px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100px;      
+        left: 2550px;
+    }
+}
+
+@keyframes bg-bird {
+    0% {
+        top: 400px;
+        left: 1300px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 200px;
+        left: 2000px;
+        opacity: 1;
+        transform: scale(2, 2);
+    }
+}
