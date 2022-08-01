@@ -1,3 +1,5 @@
+import './index.css';
+
 const carIntroAnimation = document.querySelector('.intro__picture_type_picture-car');
 const tentAnimation = document.querySelector('.intro__picture_type_picture-tent');
 const suitcaseAnimation = document.querySelector('.intro__picture_type_picture-suitcase');

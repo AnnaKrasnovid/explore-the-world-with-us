@@ -2175,9 +2175,6 @@
   margin: 0;
   color: #222222;
 }
-.card-destinations__like {
-  background-image: url();
-}
 .card-destinations__count-like {
   font-family: "Segoe UI";
   font-size: 24px;
@@ -2271,7 +2268,6 @@
 
 .tour-packages {
   background-color: #264257;
-  background-image: url();
   padding: 100px 0 100px 7.8%;
   overflow: hidden;
   background-image: url(../image/bg-packeges.png);

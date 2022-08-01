@@ -34,13 +34,6 @@
 }
 
 @font-face {
-    font-family: "Denk One";
-    src: url() format("woff"),
-         url() format("woff2");
-    font-weight: 400;
-}
-
-@font-face {
     font-family: "Roboto";
     src: url(./Roboto-Regular.woff) format("woff"),
          url(./Roboto-Regular.woff2) format("woff2");

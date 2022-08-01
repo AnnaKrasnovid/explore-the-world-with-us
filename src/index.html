@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore The World With Us!</title>
-    <link rel="stylesheet" href="pages/index.css">
-    <link rel="icon" href="image/car.svg" type="image/svg+xml">
+    <!--<link rel="stylesheet" href="pages/index.css">-->
+    <link rel="icon" href="<%=require('./image/car.svg')%>" type="image/svg+xml">
 </head>
 
 <body class="root">
     <div class="page">
         <header class="header">
-            <img class="logo logo_header" src="image/logo.svg" alt="Logo">
+            <img class="logo logo_header" src="<%=require('./image/logo.svg')%>" alt="Logo">
             <div class="header__info">
                 <div class="header__item">
-                    <img class="header__icon" src="image/ic_business.svg" alt="briefcase">
+                    <img class="header__icon" src="<%=require('./image/ic_business.svg')%>" alt="briefcase">
                     <div class="header__container">
                         <h4 class="header__title">Corporate</h4>
                         <span class="header__subtitle">Manage your Bussiness</span>
                     </div>
                 </div>
                 <div class="header__item">
-                    <img class="header__icon" src="image/ic_trip.svg" alt="tourist">
+                    <img class="header__icon" src=" <%=require('./image/ic_trip.svg')%>" alt="tourist">
                     <div class="header__container">
                         <h4 class="header__title">Agent</h4>
                         <span class="header__subtitle">Manage your bookings</span>
@@ -32,7 +32,7 @@
                 <button class="button button_type_header">SignUp</button>
             </div>
         </header>
-
+        
         <main>
             <section class="lead">
                 
@@ -133,7 +133,7 @@
                 <div class="booking__container">
                     <div class="booking__container-card">
                         <div class="card-booking card-booking_rotate_left">
-                            <img class="card-booking__picture" src="./image/booking-card-1.jpg" alt="Picture">
+                            <img class="card-booking__picture" src="<%=require('./image/booking-card-1.jpg')%>" alt="Picture">
                             <h3 class="card-booking__title">Contrary to popular belief.</h3>
                             <p class="card-booking__subtitle">Upto 50% off On Your booking Upto 50% off On Your
                                 booking/p>
@@ -145,7 +145,7 @@
                     </div>
                     <div class="booking__container-card">
                         <div class="card-booking card-booking_rotate_center">
-                            <img class="card-booking__picture" src="./image/booking-card-2.jpg" alt="Picture">
+                            <img class="card-booking__picture" src="<%=require('./image/booking-card-2.jpg')%>" alt="Picture">
                             <h3 class="card-booking__title">Contrary to popular belief.</h3>
                             <p class="card-booking__subtitle">Upto 50% off On Your booking</p>
                             <div class="card-booking__info">
@@ -156,7 +156,7 @@
                     </div>
                     <div class="booking__container-card">
                         <div class="card-booking card-booking_rotate_right">
-                            <img class="card-booking__picture" src="./image/booking-card-3.jpg" alt="Picture">
+                            <img class="card-booking__picture" src="<%=require('./image/booking-card-3.jpg')%>" alt="Picture">
                             <h3 class="card-booking__title">Contrary to popular belief.</h3>
                             <p class="card-booking__subtitle">Upto 50% off On Your booking</p>
                             <div class="card-booking__info">
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </section>
-
+           
             <section class="destinations">
                 <div class="container-info">
                     <h2 class="title">Popular Destinations</h2>
@@ -199,9 +199,9 @@
                             <button class="button button_type_to-share"></button>
                             <button class="button button_type_card-destinations">View More</button>
                         </div>
-                        <img class="card-destinations__picture" src="./image/destinations-img1.jpg" alt="Picture">
+                        <img class="card-destinations__picture" src="<%=require('./image/destinations-img1.jpg')%>" alt="Picture">
                     </li>
-
+                    
                     <li class="card-destinations">
                         <div class="card-destinations__container-title">
                             <div class="icon-place icon-place_type_destinations"></div>
@@ -226,7 +226,7 @@
                             <button class="button button_type_to-share"></button>
                             <button class="button button_type_card-destinations">View More</button>
                         </div>
-                        <img class="card-destinations__picture" src="./image/destinations-img1.jpg" alt="Picture">
+                        <img class="card-destinations__picture" src="<%=require('./image/destinations-img1.jpg')%>" alt="Picture">
                     </li>
                 </ul>
             </section>
@@ -249,7 +249,30 @@
 
                     <li class="card-tour">
                         <div class="card-tour__item">
-                            <img class="card-tour__place" alt="Picture" src="./image/tour-packages-1.jpg">
+                            <img class="card-tour__place" alt="Picture" src="<%=require('./image/tour-packages-1.jpg')%>">
+                            <div class="star">
+                                <span class="star__icon"></span>
+                                <p class="star__estimation">4.5</p>
+                            </div>
+                            <p class="cost">$ 250.00</p>
+                        </div>
+                        <h3 class="card-tour__title">Enjoy the beauty of the Rialto Bridge</h3>
+                        <div class="card-tour__info">
+                            <div class="card-tour__box">
+                                <div class="icon-place icon-place_type_card-tour"></div>
+                                <p class="card-tour__text">Location</p>
+                            </div>
+                            <div class="card-tour__box">
+                                <div class="card-tour__icon"></div>
+                                <p class="card-tour__text">7D/8N</p>
+                            </div>
+                            <button class="button button_type_card-tour" type="button">View Details</button>
+                        </div>
+                    </li>
+                    
+                    <li class="card-tour">
+                        <div class="card-tour__item">
+                            <img class="card-tour__place" alt="Picture" src="<%=require('./image/tour-packages-2.jpg')%>">
                             <div class="star">
                                 <span class="star__icon"></span>
                                 <p class="star__estimation">4.5</p>
@@ -272,7 +295,7 @@
 
                     <li class="card-tour">
                         <div class="card-tour__item">
-                            <img class="card-tour__place" alt="Picture" src="./image/tour-packages-2.jpg">
+                            <img class="card-tour__place" alt="Picture" src="<%=require('./image/tour-packages-3.jpg')%>">
                             <div class="star">
                                 <span class="star__icon"></span>
                                 <p class="star__estimation">4.5</p>
@@ -292,33 +315,10 @@
                             <button class="button button_type_card-tour" type="button">View Details</button>
                         </div>
                     </li>
-
+                    
                     <li class="card-tour">
                         <div class="card-tour__item">
-                            <img class="card-tour__place" alt="Picture" src="./image/tour-packages-3.jpg">
-                            <div class="star">
-                                <span class="star__icon"></span>
-                                <p class="star__estimation">4.5</p>
-                            </div>
-                            <p class="cost">$ 250.00</p>
-                        </div>
-                        <h3 class="card-tour__title">Enjoy the beauty of the Rialto Bridge</h3>
-                        <div class="card-tour__info">
-                            <div class="card-tour__box">
-                                <div class="icon-place icon-place_type_card-tour"></div>
-                                <p class="card-tour__text">Location</p>
-                            </div>
-                            <div class="card-tour__box">
-                                <div class="card-tour__icon"></div>
-                                <p class="card-tour__text">7D/8N</p>
-                            </div>
-                            <button class="button button_type_card-tour" type="button">View Details</button>
-                        </div>
-                    </li>
-
-                    <li class="card-tour">
-                        <div class="card-tour__item">
-                            <img class="card-tour__place" alt="Picture" src="./image/tour-packages-2.jpg">
+                            <img class="card-tour__place" alt="Picture" src="<%=require('./image/tour-packages-2.jpg')%>">
                             <div class="star">
                                 <span class="star__icon"></span>
                                 <p class="star__estimation">4.5</p>
@@ -354,7 +354,7 @@
                         <li class="card-popular-destinations">
                             <div class="card-popular-destinations__item">
                                 <img class="card-popular-destinations__place" alt="Picture"
-                                    src="./image/tour-packages-2.jpg">
+                                    src="<%=require('./image/tour-packages-2.jpg')%>">
                                 <div class="star">
                                     <span class="star__icon"></span>
                                     <p class="star__estimation">4.5</p>
@@ -378,11 +378,11 @@
                                 </div>
                             </div>
                         </li>
-
+                        
                         <li class="card-popular-destinations">
                             <div class="card-popular-destinations__item">
                                 <img class="card-popular-destinations__place" alt="Picture"
-                                    src="./image/tour-packages-2.jpg">
+                                    src=" <%=require('./image/tour-packages-2.jpg')%>">
                                 <div class="star">
                                     <span class="star__icon"></span>
                                     <p class="star__estimation">4.5</p>
@@ -432,7 +432,7 @@
 
             <section class="information">
                 <div class="information__container">
-                    <img class="logo logo_type_footer" src="./image/logo.png" alt="Logo">
+                    <img class="logo logo_type_footer" src="<%=require('./image/logo.png')%>" alt="Logo">
                     <p class="information__text">All the Lorem Ipsum generators on the Internet tend to repeat
                         predefined chunks as necessary, making this the first true generator on the Internet.</p>
                 </div>
@@ -492,38 +492,38 @@
                 </nav>
             </section>
         </main>
-
+       
         <footer class="footer" aria-label="footer">
             <ul class="social-icon">
                 <li class="social-icon__point">
                     <a class="social-icon__link" href="#">
-                        <img src="./image/in.svg" alt="in">
+                        <img src="<%=require('./image/in.svg')%>" alt="in">
                     </a>
                 </li>
                 <li class="social-icon__point">
                     <a class="social-icon__link" href="#">
-                        <img class="social-icon__icon" src="./image/instagram.svg" alt="instagram">
+                        <img class="social-icon__icon" src="<%=require('./image/instagram.svg')%>" alt="instagram">
                     </a>
                 </li>
                 <li class="social-icon__point">
                     <a class="social-icon__link" href="#">
-                        <img class="social-icon__icon" src="./image/youtube.svg" alt="youtube">
+                        <img class="social-icon__icon" src="<%=require('./image/youtube.svg')%>" alt="youtube">
                     </a>
                 </li>
                 <li class="social-icon__point">
                     <a class="social-icon__link" href="#">
-                        <img class="social-icon__icon" src="./image/twitter.svg" alt="twitter">
+                        <img class="social-icon__icon" src="<%=require('./image/twitter.svg')%>" alt="twitter">
                     </a>
                 </li>
                 <li class="social-icon__point">
                     <a class="social-icon__link" href="#">
-                        <img class="social-icon__icon" src="./image/facebook.svg" alt="facebook">
+                        <img class="social-icon__icon" src="<%=require('./image/facebook.svg')%>" alt="facebook">
                     </a>
                 </li>
             </ul>
             <p class="footer__copyright">Copyright 2021, All rights reserved.</p>
         </footer>
-        <script src="./pages/index.js"></script>
+        <!--<script src="./pages/index.js"></script>-->
 </body>
 
 </html>
